@@ -21,6 +21,18 @@ p
     font-family: 'Adelphe Floreal Regular';
     font-size: 16px;
     color: var(--gold);
+    margin: 4px;
+}
+
+.fakelink
+{
+    /* display: block; */
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: var(--nearblack);
+    white-space: pre;
+    color: var(--indigo);
 }
 
 h1
@@ -28,6 +40,15 @@ h1
     font-family: 'Adelphe Floreal Bold';
     font-size: 32px;
     color: var(--gold);
+    margin: 4px;
+}
+
+h2
+{
+    font-family: 'Adelphe Floreal Bold';
+    font-size: 20px;
+    color: var(--gold);
+    margin: 4px;
 }
 
 a
@@ -53,7 +74,6 @@ div
     border-width: 2px;
     border-radius: 1px;
     border-color: var(--gold);
-    padding: 2px;
-    border-style: solid;
     padding: 4px;
+    border-style: solid;
 }
