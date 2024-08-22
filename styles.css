@@ -39,7 +39,7 @@ li::marker
     color: var(--indigo);
 }
 
-.fakelink
+.fakelink_r
 {
     /* display: block; */
     position: absolute;
@@ -48,6 +48,19 @@ li::marker
     background-color: var(--nearblack);
     white-space: pre;
     color: var(--indigo);
+    font-size: 14px;
+}
+
+.fakelink_l
+{
+    /* display: block; */
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: var(--nearblack);
+    white-space: pre;
+    color: var(--indigo);
+    font-size: 14px;
 }
 
 h1
