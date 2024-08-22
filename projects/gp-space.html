@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <div style="width: 640px; margin: 0 auto">
+        <div style="width: 100%; overflow: hidden">
+            <div class="container">
+                <h1>project - space game graphics demo</h1>
+            </div>
+
+            <a href="https://github.com/oculometric/GP-Assessment-1" style="display: block; text-align: center;">Github repository</a>
+            
+            <br/>
+
+            <div class="container">
+                <iframe width="628" height="480" src="https://www.youtube.com/embed/lSeaF10TL8w?si=QsvShgBPpfG682pJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="container" style="border-color: var(--indigo);">
+                <img src="gp-space/gp-space-1.png" style="display: block; width: 100%">
+            </div>
+
+            <div class="container">
+                <p>for my Introduction to Graphics Programming module in my first year at University, we were required to make some sort of application which demonstrated the skills and knowledge we developed during the module.</p>
+                <br>
+                <p>i had a significant advantage on this assignment, since i already have considerable experience with 3D rendering algorithms, shaders, and also just the spatial visualisation you gain from consistently using 3D design software, however i still learned a huge amount during the module.</p>
+                <br>
+                <p>we were required to use OpenGL 1 to build this application, which imposed some limitations but also introduces the fixed function pipeline in an understandable way.</p>
+                <br>
+                <p>i settled on creating a simple little space game, where the player could pan the camera, turn the spaceship, and fly around a very simple solar system.</p>
+            </div>
+
+            <div class="container" style="border-color: var(--indigo);">
+                <img src="gp-space/gp-space-2.png" style="display: block; width: 100%">
+            </div>
+
+            <div class="container">
+                <iframe width="628" height="480" src="https://www.youtube.com/embed/zlZleq1_wqU?si=lVApzFiseM_hnkMm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="container">
+                <p>i implemented various key features which the assignment called for: user input, a scene heirarchy, using different features of OpenGL, drawing text, and so on.</p>
+                <br>
+                <p>however i also gave myself a few particular challenges here. the first was to support switching dynamically between two different scenes, which required building a resource management system and separating the input/rendering side from the actual gameplay and scene control side.</p>
+                <br>
+                <p>the second challenge was implementing post-processing. i wanted to try and apply the sepia-toned vintage-space look i've used in Blender projects previously, but this proved harder than expected. OpenGL does not support shaders, so the only way to perform post-processing was to copy pixels from the GPU into CPU memory, perform an algorithm in C++ to apply colour correction, then copy pixels back. however, i found that this did not work with non-integrated GPUs, which lead me to a better solution, where the processed pixels are transferred to a texture, which is placed onto a plane in front of the camera and then rendered to give the final image.</p>
+            </div>
+
+            <div class="container" style="border-color: var(--indigo);">
+                <img src="gp-space/gp-space-3.png" style="display: block; width: 100%">
+            </div>
+
+            <div class="container">
+                <p>above is the other scene i created, an empty museum-style space (borrowed from another project of mine) also set somewhere astronomical. featuring masked transparency on the leaves.</p>
+                <br>
+                <p>i also developed a debug view, which was useful during development and is also a cool way of using another OpenGL feature</p>
+            </div>
+
+            <div class="container" style="border-color: var(--indigo);">
+                <img src="gp-space/gp-space-4.png" style="display: block; width: 100%">
+            </div>
+
+            <div class="container" style="border-color: var(--indigo);">
+                <img src="gp-space/gp-space-5.png" style="display: block; width: 100%">
+            </div>
+
+            <div class="container">
+                <p>sorry if the bright images blinded you.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer style="width: 640px; margin: 0 auto;">
+    <hr style="border-color: var(--indigo);">
+    <a href="../index.html">return to homepage</a>
+    <div style="text-align: right; float: right;"><a href="contact-me.html">contact me</a></div>
+    <p>website developed in pure HTML and CSS by me!</p>
+    <p>fonts used are the <a href="https://befonts.com/adelphe-font-family.html">Adelphe family</a> created by Eugénie Bidaut</p>
+</footer>
