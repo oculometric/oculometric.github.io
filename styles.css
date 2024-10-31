@@ -39,27 +39,14 @@ li::marker
     color: var(--indigo);
 }
 
-.fakelink_r
+.fakelink
 {
-    /* display: block; */
-    position: absolute;
     bottom: 0px;
     right: 0px;
     background-color: var(--nearblack);
+    color: var(--carmine);
+    text-align: center;
     white-space: pre;
-    color: var(--indigo);
-    font-size: 14px;
-}
-
-.fakelink_l
-{
-    /* display: block; */
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    background-color: var(--nearblack);
-    white-space: pre;
-    color: var(--indigo);
     font-size: 14px;
 }
 
