@@ -7,40 +7,45 @@
 <body style="max-width: 768px; margin:auto">
     <br><br>
     <header style="justify-content: space-between; align-items: center;">
-        <span is-="typography" variant-="h2" style="font-weight:bold;">
-            <span style="color:var(--blue);">[</span>
-            <span style="color:var(--green);">cassette</span>
-            <span style="color:var(--blue);"> - </span>
-            <span style="color:var(--yellow);">portfolio</span>
-            <span style="color:var(--blue);">]</span>
+        <span is-="typography">
+            <span style="color:var(--carmine);">[</span>
+            <span>cassette - portfolio</span>
+            <span style="color:var(--carmine);">]</span>
+        </span>
+        <span is-="typography" style="float: right;">
+            <span style="color:var(--carmine);">[</span>
+            <span>0xCA55E77E</span>
+            <span style="color:var(--carmine);">]</span>
         </span>
     </header>
     <br>
 
-    <div box-="square" style="margin-bottom:1lh;" shear-="top">
-        <span is-="badge" variant-="foreground0">
-            about
-        </span>
-        <p>hiya! i'm Cassette, i'm a graphics programmer and artist, and i'm studying games programming at Staffordshire University.</p>
-        <p>at present i'm looking for placement/internship positions for the 2025/26 academic year.</p>
+    <div style="max-width: calc(100% - 220px); display: inline-block;">
+        <div box-="square" style="margin-bottom:1lh;" shear-="top">
+            <span is-="badge" variant-="foreground0">
+                about
+            </span>
+            <p>hiya! i'm Cassette, i'm a graphics programmer and technical artist, and i'm studying games programming at Staffordshire University.</p>
+            <p>at present i'm looking for work as a rendering engineer or tech artist for after i graduate in early 2026.</p>
+        </div>
+
+        <div box-="square" style="margin-bottom:1lh;" shear-="top">
+            <span is-="badge" variant-="foreground0">
+                skills
+            </span>
+            <ul>
+                <li>programming (C++, C#, python)</li>
+                <li>graphics (Vulkan, GLSL, OpenGL, HLSL, DirectX 11)</li>
+                <li>3D modelling (Blender)</li>
+                <li>game engines (Unity, UE 4 & 5, Godot)</li>
+                <li>source control/collaboration (Git)</li>
+            </ul>
+            <br>
+            <p>my current projects are a solo Godot game about a museum, a DirectX renderer for one of my uni modules, and a surrealist art project.</p>
+        </div>
     </div>
 
-    <div box-="square" style="margin-bottom:1lh;" shear-="top">
-        <span is-="badge" variant-="foreground0">
-            skills
-        </span>
-        <ul>
-            <li>programming (C++, C#, python)</li>
-            <li>graphics (Vulkan, GLSL, OpenGL, HLSL, DirectX 11)</li>
-            <li>3D modelling (Blender)</li>
-            <li>game engines (Unity, UE 4 & 5, Godot)</li>
-            <li>source control/collaboration (Git)</li>
-        </ul>
-        <br>
-        <p>my current projects are a solo Godot game about a museum, a DirectX renderer for one of my uni modules, and a surrealist art project.</p>
-    </div>
-
-    <div box-="square" style="margin-bottom:1lh; max-width: 220px;" shear-="top">
+    <div box-="square" style="margin-bottom:1lh; max-width: 220px; float: right;" shear-="top">
         <span is-="badge" variant-="foreground0">
             menu
         </span>
@@ -110,6 +115,14 @@
         </a>
         <br style="line-height: 2;">
     </div>
+
+    <div box-="square" style="margin-bottom:1lh; max-width: calc(100% - 220px); display: inline-block;" shear-="top">
+        <span is-="badge" variant-="foreground0">
+            babygirl
+        </span>
+        <img src="asha.png" style="max-width: 100%;">
+    </div>
+
 </body>
 
 

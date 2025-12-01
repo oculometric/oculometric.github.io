@@ -31,6 +31,13 @@ a
     padding-left: 1rem;
 }
 
+img
+{
+    padding-top: 1lh;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
 a.menu_link
 {
     float: right;
