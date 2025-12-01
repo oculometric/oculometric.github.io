@@ -57,6 +57,7 @@ a.menu_link
     --foreground0: var(--gold);
     --foreground1: var(--gold);
     --line-height: 20px;
+    -webkit-text-size-adjust: 100%;
 }
 
 button
