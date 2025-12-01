@@ -13,10 +13,68 @@
 @import 'node_modules/@webtui/css/dist/components/input.css';
 @import 'node_modules/@webtui/css/dist/components/popover.css';
 
-/* p
+p
 {
-    padding-top: 1rem;
     padding-right: 1rem;
-    padding-bottom: 1rem;
     padding-left: 1rem;
-} */
+}
+
+li
+{
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+a
+{
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+a.menu_link
+{
+    float: right;
+}
+
+@font-face {
+    font-family: 'CASS_BITMAP';
+    src: url('CASS_BITMAP.ttf');
+}
+
+:root
+{
+    --nearblack: rgb(2, 4, 20);
+    --gold: rgb(242, 161, 26);
+    --carmine: rgb(207, 46, 29);
+    --indigo: rgb(100, 46, 150);
+}
+
+*
+{
+    --font-size: 16px;
+    --font-family: CASS_BITMAP;
+    --background0: var(--nearblack);
+    --foreground0: var(--gold);
+    --foreground1: var(--gold);
+    --line-height: 20px;
+}
+
+button
+{
+    color: var(--indigo);
+    border: 2px solid var(--indigo);
+    background-color: transparent;
+}
+
+button:hover
+{
+    background-color: var(--indigo);
+    color: var(--nearblack);
+}
+
+button:active
+{
+    color: var(--indigo);
+    background-color: transparent;
+    border: 2px solid transparent;
+}
