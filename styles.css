@@ -1,97 +1,22 @@
-@font-face {
-    font-family: 'Adelphe Floreal Regular';
-    src: local('fonts/Adelphe-FlorealRegular');
-}
+@layer base, utils, components;
 
-@font-face {
-    font-family: 'Adelphe Floreal Bold';
-    src: local('fonts/Adelphe-FlorealBold');
-}
+@import 'node_modules/@webtui/css/dist/base.css';
 
-:root
+/* Utils */
+@import 'node_modules/@webtui/css/dist/utils/box.css';
+
+/* Components */
+@import 'node_modules/@webtui/css/dist/components/button.css';
+@import 'node_modules/@webtui/css/dist/components/typography.css';
+@import 'node_modules/@webtui/css/dist/components/badge.css';
+@import 'node_modules/@webtui/css/dist/components/table.css';
+@import 'node_modules/@webtui/css/dist/components/input.css';
+@import 'node_modules/@webtui/css/dist/components/popover.css';
+
+/* p
 {
-    --nearblack: rgb(3, 1, 0);
-    --gold: rgb(242, 161, 26);
-    --carmine: rgb(207, 46, 29);
-    --indigo: rgb(100, 46, 150);
-}
-
-p
-{
-    font-family: 'Adelphe Floreal Regular';
-    font-size: 16px;
-    color: var(--gold);
-    margin-top: 4px;
-    margin-bottom: 4px;
-}
-
-li
-{
-    font-family: 'Adelphe Floreal Regular';
-    font-size: 16px;
-    color: var(--gold);
-    margin-top: 4px;
-    margin-bottom: 4px;
-}
-
-li::marker
-{
-    color: var(--indigo);
-}
-
-.fakelink
-{
-    bottom: 0px;
-    right: 0px;
-    background-color: var(--nearblack);
-    color: var(--carmine);
-    text-align: center;
-    white-space: pre;
-    font-size: 14px;
-}
-
-h1
-{
-    font-family: 'Adelphe Floreal Bold';
-    font-size: 32px;
-    color: var(--gold);
-    margin-top: 4px;
-    margin-bottom: 4px;
-}
-
-h2
-{
-    font-family: 'Adelphe Floreal Bold';
-    font-size: 20px;
-    color: var(--gold);
-    margin-top: 4px;
-    margin-bottom: 4px;
-}
-
-a
-{
-    font-family: 'Adelphe Floreal Regular';
-    font-size: 16px;
-    color: var(--carmine);
-}
-
-body
-{
-    background-color: black;
-}
-
-div
-{
-    background-color: var(--nearblack);
-}
-
-.container
-{
-    background-color: var(--nearblack);
-    border-width: 2px;
-    border-radius: 1px;
-    border-color: var(--gold);
-    padding: 4px;
-    border-style: solid;
-    margin-bottom: 6px;
-}
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+} */
