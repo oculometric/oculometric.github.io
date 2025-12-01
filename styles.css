@@ -1,17 +1,17 @@
 @layer base, utils, components;
 
-@import 'node_modules/@webtui/css/dist/base.css';
+@import 'webtui/css/base.css';
 
 /* Utils */
-@import 'node_modules/@webtui/css/dist/utils/box.css';
+@import 'webtui/css/utils/box.css';
 
 /* Components */
-@import 'node_modules/@webtui/css/dist/components/button.css';
-@import 'node_modules/@webtui/css/dist/components/typography.css';
-@import 'node_modules/@webtui/css/dist/components/badge.css';
-@import 'node_modules/@webtui/css/dist/components/table.css';
-@import 'node_modules/@webtui/css/dist/components/input.css';
-@import 'node_modules/@webtui/css/dist/components/popover.css';
+@import 'webtui/css/components/button.css';
+@import 'webtui/css/components/typography.css';
+@import 'webtui/css/components/badge.css';
+@import 'webtui/css/components/table.css';
+@import 'webtui/css/components/input.css';
+@import 'webtui/css/components/popover.css';
 
 p
 {
