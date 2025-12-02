@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <head>
     <link rel="preload" href="styles.css" as="style"/>
-    <link rel="preload" href="webtui/css/base.css" as="style"/>
-    <link rel="preload" href="webtui/css/utils/box.css" as="style"/>
     <link rel="stylesheet" href="styles.css"/>
 </head>
 
@@ -13,25 +11,25 @@
 <meta content="https://oculometric.github.io/projects/asha.jpg" property="og:image" />
 <meta content="#F2A11A" data-react-helmet="true" name="theme-color" />
 
-<body style="max-width: 768px; margin:auto; padding-left: 1rem; padding-right: 1rem;">
+<body style="max-width: 768px; margin:auto; padding-left: 1ch; padding-right: 1ch;">
     <br><br>
-    <header style="justify-content: space-between; align-items: center;">
-        <span is-="typography">
+    <header style="justify-content: space-between; align-items: center; background-color: var(--lighterblack);">
+        <span style="background-color: transparent;">
             <span style="color:var(--carmine);">[</span>
-            <span>cassette - portfolio</span>
+            cassette - portfolio
             <span style="color:var(--carmine);">]</span>
         </span>
-        <span is-="typography" style="float: right;">
+        <span style="float: right;">
             <span style="color:var(--carmine);">[</span>
-            <span>0xCA55E77E</span>
+            0xCA55E77E
             <span style="color:var(--carmine);">]</span>
         </span>
     </header>
     <br>
 
     <div style="max-width: calc(100% - 220px); display: inline-block;">
-        <div box-="square" style="margin-bottom:1lh;" shear-="top">
-            <span is-="badge" variant-="foreground0">
+        <div class="bordered_box">
+            <span class="badge">
                 about
             </span>
             <p>hiya! i'm Cassette, i'm a graphics programmer and technical artist, and i'm studying games programming at
@@ -40,8 +38,8 @@
                 2026.</p>
         </div>
 
-        <div box-="square" style="margin-bottom:1lh;" shear-="top">
-            <span is-="badge" variant-="foreground0">
+        <div class="bordered_box">
+            <span class="badge">
                 skills
             </span>
             <ul>
@@ -56,123 +54,30 @@
             <p>my current projects are a Vulkan renderer for a uni module, and my dissertation project looking at
                 isosurface extraction.</p>
         </div>
-
-        <div box-="square" style="margin-bottom:1lh;" shear-="top">
-            <span is-="badge" variant-="foreground0">
-                projects
-            </span>
-            <table style="width:100%; table-layout: fixed; border: none;">
-                <tr>
-                    <td>
-                        <a href="projects/framework-renderer.html"
-                            style="text-decoration: none; display: block; width: 100%; height: 100%;">
-                            <img src="projects/framework-renderer.jpg" style="width: 100%;" />
-                            <p style="background-color: var(--carmine); color: var(--nearblack); text-align: center;">
-                                framework-renderer
-                            </p>
-                        </a>
-                        <p style="text-align: center;">
-                            ~~ DX11 renderer demo written in C++ ~~
-                        </p>
-                    </td>
-                    <td>
-                        <a href="projects/asha.html"
-                            style="text-decoration: none; display: block; width: 100%; height: 100%;">
-                            <img src="projects/asha.jpg" style="width: 100%;" />
-                            <p style="background-color: var(--carmine); color: var(--nearblack); text-align: center;">
-                                Asha (fanart)
-                            </p>
-                        </a>
-                        <p style="text-align: center;">
-                            ~~ low-poly pixel-art character ~~
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="projects/rod-and-ripple.html"
-                            style="text-decoration: none; display: block; width: 100%; height: 100%;">
-                            <img src="projects/ror.jpg" style="width: 100%;" />
-                            <p style="background-color: var(--carmine); color: var(--nearblack); text-align: center;">
-                                Rod and Ripple
-                            </p>
-                        </a>
-                        <p style="text-align: center;">
-                            ~~ UE5 fishing game group project ~~
-                        </p>
-                    </td>
-                    <td>
-                        <a href="projects/origami-sunset.html"
-                            style="text-decoration: none; display: block; width: 100%; height: 100%;">
-                            <img src="projects/origami-sunset.jpg" style="width: 100%;" />
-                            <p style="background-color: var(--carmine); color: var(--nearblack); text-align: center;">
-                                origami-sunset
-                            </p>
-                        </a>
-                        <p style="text-align: center;">
-                            ~~ pure C++ constellation renderer ~~
-                        </p>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <a href="projects/stui.html"
-                            style="text-decoration: none; display: block; width: 100%; height: 100%;">
-                            <img src="projects/stui/stui-thumb.png" style="width: 100%;" />
-                            <p style="background-color: var(--carmine); color: var(--nearblack); text-align: center;">
-                                STUI
-                            </p>
-                        </a>
-                        <p style="text-align: center;">
-                            ~~ interactive text UI builder toolkit ~~
-                        </p>
-                    </td>
-                    <td>
-                        <a href="projects/hyperfractal.html"
-                            style="text-decoration: none; display: block; width: 100%; height: 100%;">
-                            <img src="projects/hyperfractal.jpg" style="width: 100%;" />
-                            <p style="background-color: var(--carmine); color: var(--nearblack); text-align: center;">
-                                HyperFractal
-                            </p>
-                        </a>
-                        <p style="text-align: center;">
-                            ~~ fractal generator written in C++ ~~
-                        </p>
-                    </td>
-                </tr>
-
-            </table>
-        </div>
     </div>
 
     <!-- menu -->
     <div style="width: calc(220px - 1rem); float: right;">
-        <div box-="square" style="margin-bottom:1lh;" shear-="top">
-            <span is-="badge" variant-="foreground0">
+        <div class="bordered_box">
+            <span class="badge">
                 menu
             </span>
-            <br style="line-height: 1;">
-            <br style="line-height: 1;">
+            <p style="padding-top: 1lh;"></p>
             <a href="JacobCostenCV.pdf" class="menu_link">
                 <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ CV ]</button>
             </a>
-            <br style="line-height: 2;">
             <a href="about-me.html" class="menu_link">
                 <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ about me ]</button>
             </a>
-            <br style="line-height: 2;">
             <a href="my-employment.html" class="menu_link">
                 <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ employment ]</button>
             </a>
-            <br style="line-height: 2;">
             <a href="my-education.html" class="menu_link">
                 <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ education ]</button>
             </a>
 
-            <br style="line-height: 2;">
-            <p style="float: right; width: 100%; text-align-last: center;">_ programming _</p>
-            <br style="line-height: 2;">
+            <p style="float: left; width: 100%; text-align: center; padding: 0;">_ programming _</p>
+            <br>
             <a href="programming-projects.html" class="menu_link">
                 <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ projects ]</button>
             </a>
@@ -181,67 +86,130 @@
                 <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ Github ]</button>
             </a>
 
-            <br style="line-height: 2;">
-            <p style="float: right; width: 100%; text-align-last: center;">_ games _</p>
-            <br style="line-height: 2;">
+            <p style="float: left; width: 100%; text-align: center; padding: 0">_ games _</p>
             <a href="game-projects.html" class="menu_link">
                 <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ projects ]</button>
             </a>
-            <br style="line-height: 2;">
             <a href="https://oculometric.itch.io" target="_blank" class="menu_link">
                 <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ Itch ]</button>
             </a>
 
-            <br style="line-height: 2;">
-            <p style="float: right; width: 100%; text-align-last: center;">_ art _</p>
-            <br style="line-height: 2;">
+            <p style="float: left; width: 100%; text-align: center; padding: 0">_ art _</p>
             <a href="art-projects.html" class="menu_link">
                 <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ projects ]</button>
             </a>
-            <br style="line-height: 2;">
             <a href="https://oculometric.artstation.com/albums/13958836" target="_blank" class="menu_link">
                 <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ Artstation ]</button>
             </a>
-            <br style="line-height: 2;">
             <a href="https://instagram.com/oculometric" target="_blank" class="menu_link">
                 <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ Instagram ]</button>
             </a>
 
-            <br style="line-height: 2;">
-            <p style="float: right; width: 100%; text-align-last: center;">_ contact _</p>
-            <br style="line-height: 2;">
+            <p style="float: left; width: 100%; text-align: center; padding: 0">_ contact _</p>
             <a href="contact-me.html" class="menu_link">
                 <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ contact ]</button>
             </a>
-            <br style="line-height: 2;">
             <a href="https://www.linkedin.com/in/jacob-costen" target="_blank" class="menu_link">
                 <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ Linkedin ]</button>
             </a>
-            <br style="line-height: 2;">
+
+            <p style="width: 100%; text-align: center; padding: 0">...</p>
         </div>
     </div>
 
-
-    <!-- <div box-="square" style="margin-bottom:1lh; max-width: calc(100% - 220px); display: inline-block;" shear-="top">
-        <span is-="badge" variant-="foreground0">
-            babygirl
+    <!-- projects table -->
+    <div class="bordered_box">
+        <span class="badge">
+            projects
         </span>
-        <img src="asha.png" style="max-width: 100%;">
-    </div> -->
+        <table style="width:100%; table-layout: fixed; border: none;">
+            <tr>
+                <td>
+                    <a href="projects/framework-renderer.html" class="block_link">
+                        <img src="projects/framework-renderer.jpg" style="width: 100%;"/>
+                        <p class="badge">[ framework-renderer ]</p>
+                    </a>
+                    <p style="text-align: center;">
+                        ~~ DX11 renderer demo written in C++ ~~
+                    </p>
+                </td>
+                <td>
+                    <a href="projects/asha.html" class="block_link">
+                        <img src="projects/asha.jpg" style="width: 100%;"/>
+                        <p class="badge">
+                            [ Asha (fanart) ]
+                        </p>
+                    </a>
+                    <p style="text-align: center;">
+                        ~~ low-poly pixel-art character ~~
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="projects/rod-and-ripple.html" class="block_link">
+                        <img src="projects/ror.jpg" style="width: 100%;"/>
+                        <p class="badge">
+                            [ Rod and Ripple ]
+                        </p>
+                    </a>
+                    <p style="text-align: center;">
+                        ~~ UE5 fishing game group project ~~
+                    </p>
+                </td>
+                <td>
+                    <a href="projects/origami-sunset.html" class="block_link">
+                        <img src="projects/origami-sunset.jpg" style="width: 100%;"/>
+                        <p class="badge">
+                            [ origami-sunset ]
+                        </p>
+                    </a>
+                    <p style="text-align: center;">
+                        ~~ pure C++ constellation renderer ~~
+                    </p>
+                </td>
+            </tr>
 
+            <tr>
+                <td>
+                    <a href="projects/stui.html" class="block_link">
+                        <img src="projects/stui/stui-thumb.png" style="width: 100%;"/>
+                        <p class="badge">
+                            [ STUI ]
+                        </p>
+                    </a>
+                    <p style="text-align: center;">
+                        ~~ interactive text UI toolkit ~~
+                    </p>
+                </td>
+                <td>
+                    <a href="projects/hyperfractal.html" class="block_link">
+                        <img src="projects/hyperfractal.jpg" style="width: 100%;"/>
+                        <p class="badge">
+                            [ HyperFractal ]
+                        </p>
+                    </a>
+                    <p style="text-align: center;">
+                        ~~ fractal generator written in C++ ~~
+                    </p>
+                </td>
+            </tr>
 
+        </table>
+    </div>
 </body>
 
-<footer style="max-width: 768px; margin:auto; padding: 1rem;">
-    <hr style="background-color: var(--indigo); border-width: 0px; margin-bottom:1lh; height: 2px;">
-    <header style="justify-content: space-between; align-items: center;">
-        <a href="index.html">
-            <button is-="button" size-="medium" variant-="primary">[ homepage ]</button>
+<footer style="max-width: 768px; margin:auto;">
+    <hr>
+    <header style="justify-content: space-between; align-items: center; background-color: var(--lighterblack);">
+        <a href="index.html" style="padding-left: 2ch;">
+            <button>[ homepage ]</button>
         </a>
-        <a href="contact-me.html" style="float:right;">
-            <button is-="button" size-="medium" variant-="primary">[ contact me ]</button>
+        <a href="contact-me.html" style="float:right; padding-right: 2ch;">
+            <button>[ contact me ]</button>
         </a>
     </header>
-    <br style="line-height: 1;">
-    <p>website developed in pure HTML and CSS by me, making use of <a style="color: var(--carmine)" href="https://webtui.ironclad.sh">WebTUI</a>. font used is CASS_BITMAP.ttf, created by me for origami-sunset.</p>
+    <p>website developed in pure HTML and CSS by me, inspired by <a style="color: var(--carmine)" href="https://webtui.ironclad.sh">WebTUI</a>. font used is CASS_BITMAP.ttf, created by me for origami-sunset.</p>
+    <br>
+    <hr>
 </footer>

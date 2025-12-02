@@ -1,59 +1,12 @@
-@layer base, utils, components;
-
-@import 'webtui/css/base.css';
-
-/* Utils */
-@import 'webtui/css/utils/box.css';
-
-/* Components */
-@import 'webtui/css/components/button.css';
-@import 'webtui/css/components/typography.css';
-@import 'webtui/css/components/badge.css';
-@import 'webtui/css/components/table.css';
-@import 'webtui/css/components/input.css';
-@import 'webtui/css/components/popover.css';
-
-p
-{
-    padding-right: 1rem;
-    padding-left: 1rem;
-}
-
-li
-{
-    padding-right: 1rem;
-    padding-left: 1rem;
-}
-
-a
-{
-    /* padding-right: 1rem;
-    padding-left: 1rem; */
-}
-
-img
-{
-    padding-top: 1lh;
-    padding-right: 1rem;
-    padding-left: 1rem;
-}
-
-a.menu_link
-{
-    float: right;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    width: calc(100% - 2rem);
-}
-
 @font-face {
     font-family: 'CASS_BITMAP';
-    src: url('CASS_BITMAP.ttf');
+    src: url('fonts/CASS_BITMAP.ttf');
 }
 
 :root
 {
     --nearblack: #020414;
+    --lighterblack: #12110c;
     --gold: #f2a11a;
     --carmine: #cf2e1d;
     --indigo: #642e96;
@@ -61,20 +14,140 @@ a.menu_link
 
 *
 {
-    --font-size: 16px;
-    --font-family: CASS_BITMAP;
-    --background0: var(--nearblack);
-    --foreground0: var(--gold);
-    --foreground1: var(--gold);
-    --line-height: 20px;
+    font-size: 16px;
+    font-family: CASS_BITMAP;
+    --line-height: 22px;
+    line-height: var(--line-height);
+    --border-width: 2px;
     -webkit-text-size-adjust: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--gold);
+    background-color: var(--nearblack);
+}
+
+div.bordered_box
+{
+    margin-bottom: 1lh;
+    padding-top: 0;
+    padding-left: 1ch;
+    padding-right: 1ch;
+    padding-bottom: 1lh;
+    position: relative;
+    isolation: isolate;
+    background-color: var(--lighterblack);
+}
+
+div.bordered_box:before
+{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: calc(100% - 1ch - var(--border-width));
+    height: calc(100% - 1lh - var(--border-width));
+    border: solid var(--border-width) var(--gold);
+    z-index: -1;
+}
+
+span
+{
+    background-color: transparent;
+}
+
+span.badge
+{
+    color: var(--nearblack);
+    background-color: var(--gold);
+    display: inline-flex;
+    vertical-align: middle;
+    height: 1lh;
+    padding-left: 1ch;
+    padding-right: 1ch;
+}
+
+p
+{
+    padding-right: 2ch;
+    padding-left: 2ch;
+    background-color: inherit;
+}
+
+p.badge
+{
+    background-color: var(--carmine);
+    color: var(--nearblack);
+    text-align: center;
+    margin-left: 2ch;
+    margin-right: 2ch;
+}
+
+ul
+{
+    background-color: inherit;
+}
+
+li
+{
+    list-style-type: none;
+    padding-right: 2ch;
+    padding-left: 2ch;
+    background-color: inherit;
+}
+
+li:before
+{
+    content: "- ";
+}
+
+table, tr, td, tbody
+{
+    background-color: inherit;
+}
+
+img
+{
+    padding-top: 1lh;
+    padding-right: 2ch;
+    padding-left: 2ch;
+    background-color: inherit;
+}
+
+a
+{
+    background-color: inherit;
+}
+
+a.menu_link
+{
+    float: right;
+    margin-left: 2ch;
+    margin-right: 2ch;
+    width: calc(100% - 4ch);
+    background-color: transparent;
+}
+
+a.block_link
+{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 button
 {
     color: var(--indigo);
     border: 2px solid var(--indigo);
-    background-color: transparent;
+    background-color: inherit;
+    height: var(--line-height);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2ch;
+    padding-right: 2ch;
 }
 
 button:hover
@@ -88,4 +161,12 @@ button:active
     color: var(--indigo);
     background-color: transparent;
     border: 2px solid transparent;
+}
+
+hr
+{
+    background-color: var(--indigo);
+    border-width: 0px;
+    margin-bottom:1lh;
+    height: 2px;
 }
