@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html data-webtui-theme="dark"></html>
+<html data-webtui-theme="dark">
+
+</html>
+
 <head>
     <link rel="preload stylesheet" href="styles.css">
 </head>
 
-<body style="max-width: 768px; margin:auto">
+<body style="max-width: 768px; margin:auto; padding-left: 1rem; padding-right: 1rem;">
     <br><br>
     <header style="justify-content: space-between; align-items: center;">
         <span is-="typography">
@@ -25,8 +28,10 @@
             <span is-="badge" variant-="foreground0">
                 about
             </span>
-            <p>hiya! i'm Cassette, i'm a graphics programmer and technical artist, and i'm studying games programming at Staffordshire University.</p>
-            <p>at present i'm looking for work as a rendering engineer or tech artist for after i graduate in early 2026.</p>
+            <p>hiya! i'm Cassette, i'm a graphics programmer and technical artist, and i'm studying games programming at
+                Staffordshire University.</p>
+            <p>at present i'm looking for work as a rendering engineer or tech artist for after i graduate in early
+                2026.</p>
         </div>
 
         <div box-="square" style="margin-bottom:1lh;" shear-="top">
@@ -34,171 +39,203 @@
                 skills
             </span>
             <ul>
-                <li>programming (C++, C#, python)</li>
-                <li>graphics (Vulkan, GLSL, OpenGL, HLSL, DirectX 11)</li>
-                <li>3D modelling (Blender)</li>
-                <li>game engines (Unity, UE 4 & 5, Godot)</li>
+                <li>programming (C++, C#, Blueprint, python)</li>
+                <li>graphics (Vulkan, GLSL, OpenGL (3.3, 1.x), HLSL, DirectX 11/12)</li>
+                <li>technical art (import pipelines, shader development)</li>
+                <li>3D modelling/texturing (Blender, Krita, Inkscape, GIMP)</li>
+                <li>game engines (Godot, Unity, UE 4/5)</li>
                 <li>source control/collaboration (Git)</li>
             </ul>
             <br>
-            <p>my current projects are a solo Godot game about a museum, a DirectX renderer for one of my uni modules, and a surrealist art project.</p>
+            <p>my current projects are a Vulkan renderer for a uni module, and my dissertation project looking at
+                isosurface extraction.</p>
+        </div>
+
+        <div box-="square" style="margin-bottom:1lh;" shear-="top">
+            <span is-="badge" variant-="foreground0">
+                projects
+            </span>
+            <table style="width:100%; table-layout: fixed; border: none;">
+                <tr>
+                    <td>
+                        <a href="projects/framework-renderer.html"
+                            style="text-decoration: none; display: block; width: 100%; height: 100%;">
+                            <img src="projects/framework-renderer.jpg" style="width: 100%;" />
+                            <p style="background-color: var(--carmine); color: var(--nearblack); text-align: center;">
+                                framework-renderer
+                            </p>
+                        </a>
+                        <p style="text-align: center;">
+                            ~~ DX11 renderer demo written in C++ ~~
+                        </p>
+                    </td>
+                    <td>
+                        <a href="projects/asha.html"
+                            style="text-decoration: none; display: block; width: 100%; height: 100%;">
+                            <img src="projects/asha.jpg" style="width: 100%;" />
+                            <p style="background-color: var(--carmine); color: var(--nearblack); text-align: center;">
+                                Asha (fanart)
+                            </p>
+                        </a>
+                        <p style="text-align: center;">
+                            ~~ low-poly pixel-art character ~~
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="projects/rod-and-ripple.html"
+                            style="text-decoration: none; display: block; width: 100%; height: 100%;">
+                            <img src="projects/ror.jpg" style="width: 100%;" />
+                            <p style="background-color: var(--carmine); color: var(--nearblack); text-align: center;">
+                                Rod and Ripple
+                            </p>
+                        </a>
+                        <p style="text-align: center;">
+                            ~~ UE5 fishing game group project ~~
+                        </p>
+                    </td>
+                    <td>
+                        <a href="projects/origami-sunset.html"
+                            style="text-decoration: none; display: block; width: 100%; height: 100%;">
+                            <img src="projects/origami-sunset.jpg" style="width: 100%;" />
+                            <p style="background-color: var(--carmine); color: var(--nearblack); text-align: center;">
+                                origami-sunset
+                            </p>
+                        </a>
+                        <p style="text-align: center;">
+                            ~~ pure C++ constellation renderer ~~
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <a href="projects/stui.html"
+                            style="text-decoration: none; display: block; width: 100%; height: 100%;">
+                            <img src="projects/stui/stui-thumb.png" style="width: 100%;" />
+                            <p style="background-color: var(--carmine); color: var(--nearblack); text-align: center;">
+                                STUI
+                            </p>
+                        </a>
+                        <p style="text-align: center;">
+                            ~~ interactive text UI builder toolkit ~~
+                        </p>
+                    </td>
+                    <td>
+                        <a href="projects/hyperfractal.html"
+                            style="text-decoration: none; display: block; width: 100%; height: 100%;">
+                            <img src="projects/hyperfractal.jpg" style="width: 100%;" />
+                            <p style="background-color: var(--carmine); color: var(--nearblack); text-align: center;">
+                                HyperFractal
+                            </p>
+                        </a>
+                        <p style="text-align: center;">
+                            ~~ fractal generator written in C++ ~~
+                        </p>
+                    </td>
+                </tr>
+
+            </table>
         </div>
     </div>
 
-    <div box-="square" style="margin-bottom:1lh; max-width: 220px; float: right;" shear-="top">
-        <span is-="badge" variant-="foreground0">
-            menu
-        </span>
-        <br style="line-height: 2;">
-        <a href="JacobCostenCV.pdf" style="float:right; width: 100%;">
-            <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ CV ]</button>
-        </a>
-        <br style="line-height: 2;">
-        <a href="about-me.html" style="float:right; width: 100%;">
-            <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ about me ]</button>
-        </a>
-        <br style="line-height: 2;">
-        <a href="my-employment.html" style="float: right; width: 100%;">
-            <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ employment ]</button>
-        </a>
-        <br style="line-height: 2;">
-        <a href="my-education.html" style="float: right; width: 100%;">
-            <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ education ]</button>
-        </a>
+    <!-- menu -->
+    <div style="width: calc(220px - 1rem); float: right;">
+        <div box-="square" style="margin-bottom:1lh;" shear-="top">
+            <span is-="badge" variant-="foreground0">
+                menu
+            </span>
+            <br style="line-height: 1;">
+            <br style="line-height: 1;">
+            <a href="JacobCostenCV.pdf" class="menu_link">
+                <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ CV ]</button>
+            </a>
+            <br style="line-height: 2;">
+            <a href="about-me.html" class="menu_link">
+                <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ about me ]</button>
+            </a>
+            <br style="line-height: 2;">
+            <a href="my-employment.html" class="menu_link">
+                <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ employment ]</button>
+            </a>
+            <br style="line-height: 2;">
+            <a href="my-education.html" class="menu_link">
+                <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ education ]</button>
+            </a>
 
-        <br style="line-height: 2;">
-        <p style="float: right; width: 100%; text-align-last: center;">_ programming _</p>
-        <br style="line-height: 2;">
-        <a href="programming-projects.html" style="float: right; width: 100%;">
-            <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ projects ]</button>
-        </a>
-        <br style="line-height: 2;">
-        <a href="https://github.com/oculometric" target="_blank" style="float: right; width: 100%;">
-            <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ Github ]</button>
-        </a>
+            <br style="line-height: 2;">
+            <p style="float: right; width: 100%; text-align-last: center;">_ programming _</p>
+            <br style="line-height: 2;">
+            <a href="programming-projects.html" class="menu_link">
+                <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ projects ]</button>
+            </a>
+            <br style="line-height: 2;">
+            <a href="https://github.com/oculometric" target="_blank" class="menu_link">
+                <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ Github ]</button>
+            </a>
 
-        <br style="line-height: 2;">
-        <p style="float: right; width: 100%; text-align-last: center;">_ games _</p>
-        <br style="line-height: 2;">
-        <a href="game-projects.html" style="float: right; width: 100%;">
-            <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ projects ]</button>
-        </a>
-        <br style="line-height: 2;">
-        <a href="https://oculometric.itch.io" target="_blank" style="float: right; width: 100%;">
-            <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ Itch ]</button>
-        </a>
+            <br style="line-height: 2;">
+            <p style="float: right; width: 100%; text-align-last: center;">_ games _</p>
+            <br style="line-height: 2;">
+            <a href="game-projects.html" class="menu_link">
+                <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ projects ]</button>
+            </a>
+            <br style="line-height: 2;">
+            <a href="https://oculometric.itch.io" target="_blank" class="menu_link">
+                <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ Itch ]</button>
+            </a>
 
-        <br style="line-height: 2;">
-        <p style="float: right; width: 100%; text-align-last: center;">_ art _</p>
-        <br style="line-height: 2;">
-        <a href="art-projects.html" style="float: right; width: 100%;">
-            <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ projects ]</button>
-        </a>
-        <br style="line-height: 2;">
-        <a href="https://oculometric.artstation.com/albums/13958836" target="_blank" style="float: right; width: 100%;">
-            <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ Artstation ]</button>
-        </a>
-        <br style="line-height: 2;">
-        <a href="https://instagram.com/oculometric" target="_blank" style="float: right; width: 100%;">
-            <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ Instagram ]</button>
-        </a>
+            <br style="line-height: 2;">
+            <p style="float: right; width: 100%; text-align-last: center;">_ art _</p>
+            <br style="line-height: 2;">
+            <a href="art-projects.html" class="menu_link">
+                <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ projects ]</button>
+            </a>
+            <br style="line-height: 2;">
+            <a href="https://oculometric.artstation.com/albums/13958836" target="_blank" class="menu_link">
+                <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ Artstation ]</button>
+            </a>
+            <br style="line-height: 2;">
+            <a href="https://instagram.com/oculometric" target="_blank" class="menu_link">
+                <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ Instagram ]</button>
+            </a>
 
-        <br style="line-height: 2;">
-        <p style="float: right; width: 100%; text-align-last: center;">_ art _</p>
-        <br style="line-height: 2;">
-        <a href="contact-me.html" style="float: right; width: 100%;">
-            <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ contact ]</button>
-        </a>
-        <br style="line-height: 2;">
-        <a href="https://www.linkedin.com/in/jacob-costen" target="_blank" style="float: right; width: 100%;">
-            <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ Linkedin ]</button>
-        </a>
-        <br style="line-height: 2;">
+            <br style="line-height: 2;">
+            <p style="float: right; width: 100%; text-align-last: center;">_ contact _</p>
+            <br style="line-height: 2;">
+            <a href="contact-me.html" class="menu_link">
+                <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ contact ]</button>
+            </a>
+            <br style="line-height: 2;">
+            <a href="https://www.linkedin.com/in/jacob-costen" target="_blank" class="menu_link">
+                <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ Linkedin ]</button>
+            </a>
+            <br style="line-height: 2;">
+        </div>
     </div>
 
-    <div box-="square" style="margin-bottom:1lh; max-width: calc(100% - 220px); display: inline-block;" shear-="top">
+
+    <!-- <div box-="square" style="margin-bottom:1lh; max-width: calc(100% - 220px); display: inline-block;" shear-="top">
         <span is-="badge" variant-="foreground0">
             babygirl
         </span>
         <img src="asha.png" style="max-width: 100%;">
-    </div>
+    </div> -->
+
 
 </body>
 
-
-
-<body>
-    <!--contains the whole page-->
-    <div style="width: 640px; margin: 0 auto">
-        <div style="width: 100%; overflow: hidden">
-            
-            <hr style="border-color: var(--gold);">
-            
-            <div style="width:100%">
-                <div style="width:210px; float: left;">
-                    <div class="container">
-                        <h2>Programming</h2>
-                        <br>
-                        <a href="projects/hyperfractal.html" style="display: block; width: 100%; height: 100%;">
-                            <img src="projects/hyperfractal.jpg" style="position: static; width: 198px;"/>
-                            <p class="fakelink"> HyperFractal </p>
-                        </a>
-                        <p style="text-align: center;">~ fractal renderer in C++ ~</p>
-                        <br>
-                        <hr style="border-color: var(--indigo);">
-                        <a href="projects/stui.html" style="display: block; width: 100%; height: 100%;">
-                            <img src="projects/stui/stui-thumb.png" style="position: static; width: 198px;"/>
-                            <p class="fakelink"> STUI </p>
-                        </a>
-                        <p style="text-align: center;">~ terminal UI toolkit ~</p>
-                    </div>
-                </div>
-                <div style="width:210px; float: left; padding-left: 5px;">
-                    <div class="container">
-                        <h2>Games</h2>
-                        <br>
-                        <a href="projects/greenhouse.html" style="display: block; width: 100%; height: 100%;">
-                            <img src="projects/greenhouse/greenhouse-thumb.jpg" style="position: static; width: 198px;"/>
-                            <p class="fakelink"> A Lonely Greenhouse </p>
-                        </a>
-                        <p style="text-align: center;">~ solo puzzle game in Unity ~</p>
-                        <br>
-                        <hr style="border-color: var(--indigo);">
-                        <a href="projects/agaricus-obscura.html" style="display: block; width: 100%; height: 100%;">
-                            <img src="projects/agaricus-obscura/agaricus-obscura-thumb.jpg" style="position: static; width: 198px;"/>
-                            <p class="fakelink"> Agaricus Obscura </p>
-                        </a>
-                        <p style="text-align: center;">~ Zelda-style text game ~</p>
-                    </div>
-                </div>
-                <div style="width:210px; float: right;">
-                    <div class="container">
-                        <h2>Art</h2>
-                        <br>
-                        <a href="projects/connect.html" style="display: block; width: 100%; height: 100%;">
-                            <img src="projects/connect/connect-thumb.jpg" style="position: static; width: 198px;"/>
-                            <p class="fakelink"> 'connect' </p>
-                        </a>
-                        <p style="text-align: center;">~ surreal space artwork ~</p>
-                        <br>
-                        <hr style="border-color: var(--indigo);">
-                        <a href="projects/spider.html" style="display: block; width: 100%; height: 100%;">
-                            <img src="projects/spider-2.gif" style="position: static; width: 198px;"/>
-                            <p class="fakelink"> mechanical spider </p>
-                        </a>
-                        <p style="text-align: center;">~ videogame player asset ~</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
-    </div>
-</body>
-
-<footer style="width: 640px; margin: 0 auto;">
-    <hr style="border-color: var(--indigo);">
-    <a href="index.html">you're already on the homepage!</a>
-    <div style="text-align: right; float: right;"><a href="contact-me.html">contact me</a></div>
-    <p>website developed in pure HTML and CSS by me!</p>
-    <p>fonts used are the <a href="https://befonts.com/adelphe-font-family.html">Adelphe family</a> created by Eugénie Bidaut</p>
+<footer style="max-width: 768px; margin:auto; padding: 1rem;">
+    <hr style="background-color: var(--indigo); border-width: 0px; margin-bottom:1lh; height: 2px;">
+    <header style="justify-content: space-between; align-items: center;">
+        <a href="index.html">
+            <button is-="button" size-="medium" variant-="primary">[ homepage ]</button>
+        </a>
+        <a href="contact-me.html" style="float:right;">
+            <button is-="button" size-="medium" variant-="primary">[ contact me ]</button>
+        </a>
+    </header>
+    <br style="line-height: 1;">
+    <p>website developed in pure HTML and CSS by me, making use of <a style="color: var(--carmine)" href="https://webtui.ironclad.sh">WebTUI</a>. font used is CASS_BITMAP.ttf, created by me for origami-sunset.</p>
 </footer>

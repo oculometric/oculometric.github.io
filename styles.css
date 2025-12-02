@@ -27,8 +27,8 @@ li
 
 a
 {
-    padding-right: 1rem;
-    padding-left: 1rem;
+    /* padding-right: 1rem;
+    padding-left: 1rem; */
 }
 
 img
@@ -41,6 +41,9 @@ img
 a.menu_link
 {
     float: right;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: calc(100% - 2rem);
 }
 
 @font-face {
