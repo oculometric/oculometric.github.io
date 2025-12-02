@@ -5,13 +5,13 @@
 </head>
 
 <title>cassette - portfolio</title>
-<meta content="cassette - portfolio" property="og:title" />
-<meta content="cassette costen's wonderful portfolio" property="og:description" />
-<meta content="https://oculometric.github.io" property="og:url" />
-<meta content="https://oculometric.github.io/projects/asha.jpg" property="og:image" />
-<meta content="#F2A11A" data-react-helmet="true" name="theme-color" />
+<meta content="cassette - portfolio" property="og:title"/>
+<meta content="cassette costen's wonderful portfolio" property="og:description"/>
+<meta content="https://oculometric.github.io" property="og:url"/>
+<meta content="https://oculometric.github.io/projects/asha.jpg" property="og:image"/>
+<meta content="#F2A11A" data-react-helmet="true" name="theme-color"/>
 
-<body style="max-width: 768px; margin:auto; padding-left: 1ch; padding-right: 1ch;">
+<body>
     <br><br>
     <header style="justify-content: space-between; align-items: center; background-color: var(--lighterblack);">
         <span style="background-color: transparent;">
@@ -57,60 +57,60 @@
     </div>
 
     <!-- menu -->
-    <div style="width: calc(220px - 1rem); float: right;">
+    <div style="width: calc(220px - 2ch); float: right;">
         <div class="bordered_box">
             <span class="badge">
                 menu
             </span>
             <p style="padding-top: 1lh;"></p>
             <a href="JacobCostenCV.pdf" class="menu_link">
-                <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ CV ]</button>
+                <button style="width:100%;">[ CV ]</button>
             </a>
             <a href="about-me.html" class="menu_link">
-                <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ about me ]</button>
+                <button style="width:100%;">[ about me ]</button>
             </a>
             <a href="my-employment.html" class="menu_link">
-                <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ employment ]</button>
+                <button style="width:100%;">[ employment ]</button>
             </a>
             <a href="my-education.html" class="menu_link">
-                <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ education ]</button>
+                <button style="width:100%;">[ education ]</button>
             </a>
 
             <p style="float: left; width: 100%; text-align: center; padding: 0;">_ programming _</p>
             <br>
             <a href="programming-projects.html" class="menu_link">
-                <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ projects ]</button>
+                <button style="width:100%;">[ projects ]</button>
             </a>
             <br style="line-height: 2;">
             <a href="https://github.com/oculometric" target="_blank" class="menu_link">
-                <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ Github ]</button>
+                <button style="width:100%;">[ Github ]</button>
             </a>
 
             <p style="float: left; width: 100%; text-align: center; padding: 0">_ games _</p>
             <a href="game-projects.html" class="menu_link">
-                <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ projects ]</button>
+                <button style="width:100%;">[ projects ]</button>
             </a>
             <a href="https://oculometric.itch.io" target="_blank" class="menu_link">
-                <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ Itch ]</button>
+                <button style="width:100%;">[ Itch ]</button>
             </a>
 
             <p style="float: left; width: 100%; text-align: center; padding: 0">_ art _</p>
             <a href="art-projects.html" class="menu_link">
-                <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ projects ]</button>
+                <button style="width:100%;">[ projects ]</button>
             </a>
             <a href="https://oculometric.artstation.com/albums/13958836" target="_blank" class="menu_link">
-                <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ Artstation ]</button>
+                <button style="width:100%;">[ Artstation ]</button>
             </a>
             <a href="https://instagram.com/oculometric" target="_blank" class="menu_link">
-                <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ Instagram ]</button>
+                <button style="width:100%;">[ Instagram ]</button>
             </a>
 
             <p style="float: left; width: 100%; text-align: center; padding: 0">_ contact _</p>
             <a href="contact-me.html" class="menu_link">
-                <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ contact ]</button>
+                <button style="width:100%;">[ contact ]</button>
             </a>
             <a href="https://www.linkedin.com/in/jacob-costen" target="_blank" class="menu_link">
-                <button is-="button" size-="medium" variant-="primary" style="width:100%;">[ Linkedin ]</button>
+                <button style="width:100%;">[ Linkedin ]</button>
             </a>
 
             <p style="width: 100%; text-align: center; padding: 0">...</p>
@@ -199,17 +199,7 @@
     </div>
 </body>
 
-<footer style="max-width: 768px; margin:auto;">
-    <hr>
-    <header style="justify-content: space-between; align-items: center; background-color: var(--lighterblack);">
-        <a href="index.html" style="padding-left: 2ch;">
-            <button>[ homepage ]</button>
-        </a>
-        <a href="contact-me.html" style="float:right; padding-right: 2ch;">
-            <button>[ contact me ]</button>
-        </a>
-    </header>
-    <p>website developed in pure HTML and CSS by me, inspired by <a style="color: var(--carmine)" href="https://webtui.ironclad.sh">WebTUI</a>. font used is CASS_BITMAP.ttf, created by me for origami-sunset.</p>
-    <br>
-    <hr>
-</footer>
+<div w3-include-html="shared_footer.html"></div> 
+
+<script src="include_html.js"></script>
+<script>checkHTMLIncludes();</script>

@@ -1,92 +1,94 @@
 <!DOCTYPE html>
-
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="styles.css" as="style"/>
+    <link rel="stylesheet" href="styles.css"/>
 </head>
 
 <body>
-    <div style="width: 640px; margin: 0 auto">
-        <div style="width: 100%; overflow: hidden">
-            <!--headline container-->
-            <div class="container">
-                <h1>about me</h1>
-            </div>
+    <br><br>
+    <header style="justify-content: space-between; align-items: center; background-color: var(--lighterblack);">
+        <span style="background-color: transparent;">
+            <span style="color:var(--carmine);">[</span>
+            cassette - portfolio
+            <span style="color:var(--carmine);">]</span>
+        </span>
+        <span style="float: right;">
+            <span style="color:var(--carmine);">[</span>
+            about me
+            <span style="color:var(--carmine);">]</span>
+        </span>
+    </header>
+    <br>
 
-            <p>hi! i'm Cassette, i'm a graphics, programming, and graphics programming lover, currently studying games programming at Staffordshire University. i did my first year in games design and programming, but i've switched to just programming for my second year to focus on graphics programming more.</p>
-            <br>
+    <div class="bordered_box" style="max-width: calc(100% - 200px); display: inline-block;">
+        <span class="badge">interests</span>
+        <p>hi! i'm Cassette, i'm a graphics programmer and technical artist currently studying games programming at Staffordshire University. i did my first year in games design and programming, but switched to just programming for my second year to focus on computer graphics. i'm now in my third year, and doing my dissertation looking at isosurface extraction, specifically marching tetrahedra (it's really fun).</p>
+        <br>
+        <p>my primary interest in rendering and graphics really crystallised in my gap year, where i took a drawing foundation course and developed my art skills in Blender and Inkscape, as well as my game development skills.</p>
+        <p>since then i've become fascinated by 3D and 2D graphics, the mathematics and algorithms that drive them, and the technical side of digital art and videogames.</p>
+        <br>
+        <p>my particular interest is in stylised visuals, post-processing (and image processing broadly) and novel rendering techniques.</p>
+    </div>
 
-            <div style="width: 100%; overflow: hidden">
-                <div class="container" style="width: 457px; float: left;">
-                    <p>my primary interest in rendering and graphics really crystallised in my gap year, where i took a drawing foundation course and developed my art skills in the 3D software Blender and 2D Inkscape, as well as my game development skills.</p>
-                    <p>since then i've become fascinated by 3D and 2D graphics, the mathematics and algorithms that drive them, and the technical side of digital art and videogames.</p>
-                    <p>my particular interest is in stylised visuals, post-processing (and image processing broadly) and novel rendering techniques.</p>
-                </div>
-                <div class="container" style="width: 153px; float: right; border-color: var(--indigo);">
-                    <img src="mugshot.jpg" style="float: right; display: block; width: 100%">
-                </div>
-            </div>
+    <div class="bordered_box" style="width: calc(200px - 2ch); float: right; display: block;">
+        <br>
+        <img src="mugshot.jpg" style="width: 100%">
+    </div>
 
-            <div class="container">
-                <p>i have experience in various programming languages including:</p>
-                <ul>
-                    <li>C/C++</li>
-                    <li>GLSL</li>
-                    <li>HLSL</li>
-                    <li>Assembly</li>
-                    <li>C#</li>
-                    <li>python</li>
-                </ul>
-                <p>i've self-taught myself programming since almost age 10, and i've picked up various skills for best practice, debugging, and optimisation along the way. i'm also good at developing large-scale architecture for projects, and following processes of decomposing large problems so they can be solved more easily.</p>
-            </div>
-
-            <div class="container">
-                <p>having studied further maths at A level, i have a strong understanding of linear algebra, integration and differentiation, complex numbers, and statistical methods, all of which are often important for digital graphics.</p>
-                <p>however, more than that, my attitude to problem solving allows me to put those tools to use in order to create unique shader effects, develop geometric solutions to spatial problems, build procedural/algorithmic generation systems, and more.</p>
-            </div>
-
-            <div style="width: 100%; overflow: hidden; height: 100%;">
-                <div style="width: 348px; float: left;">
-                    <div class="container" style="border-color: var(--indigo); display: block;">
-                        <img src="disc-go-1up.jpg" style="width: 100%;">
-                        <p style="text-align: center; font-size: 14px">the amazing team i was part of for developing <i>Disc-Go!</i>, one of the 1UP Scheme games.</p>
-                    </div>
-                    <div class="container">
-                        <p>my investigative attitude to learning and problem solving allows me to pick up and understand complex problems or pre-existing systems relatively easily, and helps me to produce novel solutions and ideas.</p>
-                    </div>
-                </div>
-                <div class="container" style="width: 274px; float: right; height: 416px;">
-                    <p>i'm also a good teamworker: i communicate ideas effectively, and foster a friendly work environment. furthermore, the drawing course i took has given me some extremely useful tools both for visualising my own ideas and presenting them diagramatically or graphically to others.</p>
-                    <p>i have experience working on shared projects, i'm familiar with source control and collaboration using <b>git</b>, and organisation and division of work both verbally and using kanban boards.</p>
-                    <p>for instance, i was recently part of the Staffs <a href="projects/1up-scheme.html">1UP Scheme</a>, an internship program run by Staffs as a standalone studio attached to the university, where i collaborated with a mid-sized team to produce an excellent party game, <i>Disc-Go!</i>, an experience which i have absolutely loved. <i>Disc-Go!</i> is also currently shortlisted for the 2024 <a href="https://tiga.org/awards/2024-shortlist" target="_blank">'Best Social Game' Tiga award</a>.</p>
-                </div>
-            </div>
-
-            <div class="container">
-                <p>currently, i'm working on a few projects:</p>
-                <ul>
-                    <li>creating a Google-earth-style explorer application in C++, and teaching myself the Vulkan API in the process</li>
-                    <li>by far my biggest project, building a from-scratch operating system kernel in C++ and Assembly, with the intention of developing it into an integrated videogame, with a retro-futurist space exploration theme</li>
-                    <li>a series of space-themed poster-style artworks combining digital 2D and 3D, along with a lot of procedural elements (post processing, texturing, geometry). see <a href="projects/connect.html">this</a> project</li>
-                    <li>a DirectX 11-powered renderer for one of my university modules</li>
-                    <li>a surreal walkthrough game in Godot, set in a museum about space</li>
-                </ul>
-                <p>sometimes i even find time to play videogames too...</p>
-            </div>
-            <br>
-
-            <p>as you might have guessed, i'm a lover of space, but also of surrealism, cassette-futurism, brutalism, fungi, botany, and bonsai.</p>
-            <p>my favourite book is <i>The Haunting of Hill House</i> by Shirley Jackson (or perhaps <i>The Ultimate Alphabet</i> by Mike Wilks); my current book is <i>House of Leaves</i> by Mark Z Danielewski.</p>
-            <br>
-            
-            <p>for specifics of my experience (work and non-work) take a look at my projects on <a href="art-projects.html">this (art)</a> page, <a href="programming-projects.html">this (programming)</a> page, and <a href="game-projects.html">this (games)</a> page.</p>
+    <div class="bordered_box">
+        <span class="badge">skills</span>
+        <p>i have experience in various programming languages such as:</p>
+        <ul>
+            <li>C++</li>
+            <li>GLSL and HLSL</li>
+            <li>Assembly (limited)</li>
+            <li>C#</li>
+            <li>python</li>
+        </ul>
+        <p>i've self-taught myself programming since almost age 10, and i've picked up various skills for best practice, debugging, and optimisation along the way. i'm also good at developing large-scale architecture for projects, and following processes of decomposing large problems so they can be solved more easily.</p>
+        <br>
+        <p>TODO: rendering APIs, tech art experience</p>
+        <br>
+        <p>having studied further maths at A level, i have a strong understanding of linear algebra, integration and differentiation, complex numbers, and statistical methods, all of which are often important in graphics.</p>
+        <p>my attitude to problem solving allows me to put those tools to use to create unique shader effects, develop geometric solutions to spatial problems, build procedural/algorithmic generation systems, and more.</p>
+        <br>
+        <p>my investigative attitude to learning and problem solving allows me to pick up and understand complex problems or pre-existing systems relatively easily, and helps me to produce novel solutions and ideas.</p>
+        <br>
+        <p>i'm also a strong teamworker: i communicate ideas effectively, and foster a friendly work environment. furthermore, the drawing course i took has given me some extremely useful tools both for visualising my own ideas and presenting them diagramatically or graphically to others.</p>
+        <p>i have experience working on shared projects, i'm familiar with source control and collaboration using git, and organisation and division of work both verbally and using kanban boards.</p>
+        <p>for instance, i was recently part of the Staffs <a href="projects/1up-scheme.html">1UP Scheme</a>, an internship program run by Staffs as a standalone studio attached to the university, where i collaborated with a mid-sized team to produce an excellent party game, <span style="color:var(--carmine)">Disc-Go!</span>, an experience which i have absolutely loved. <span style="color:var(--carmine)">Disc-Go!</span> was shortlisted for the 2024 <a href="https://tiga.org/awards/2024-shortlist" target="_blank">'Best Social Game' Tiga award</a>.</p>
+        <p>i also found myself at home in several roles for the collaborate game development module at the end of second year, picking up the roles of tech lead and tech artist for developing <a href="projects/rod-and-ripple.html">Rod and Ripple</a>.</p>
+        <br>
+        <hr>
+        <div style="width: 500px; margin: auto; background-color: inherit;">
+            <img src="disc-go-1up.jpg" style="width: 100%; background-color: inherit;">
         </div>
+        <p style="text-align: center;">the amazing team i was part of for developing <span style="color:var(--carmine)">Disc-Go!</span>, one of the 1UP Scheme games.</p>
+    </div>
+
+    <div class="bordered_box">
+        <span class="badge">projects</span>
+        <p>currently, i'm working on a few projects:</p>
+        <ul>
+            <li>teaching myself the Vulkan API (for a module)</li>
+            <li>a heavily stylised pixel art game about surreal desert spaces</li>
+            <li>my dissertation project - isosurface extraction using marching tetrahedra</li>
+            <li>a surreal walkthrough game in Godot, set in a museum about space</li>
+        </ul>
+        <br>
+        <p>sometimes i even find time to play videogames too...</p>
+    </div>
+
+    <div class="bordered_box">
+        <br>
+        <p>as you may have guessed, i'm a lover of space, surrealism, retro-futurism, brutalism, fungi, botany, and bonsai.</p>
+        <br>
+        <p>i'm currently playing <span style="color: var(--carmine)">Bloodborne</span>, and i'm planning to play <span style="color: var(--carmine)">SIGNALIS</span> next.</p>
+        <p>my favourite book is <span style="color: var(--carmine)">The Haunting of Hill House</span> by Shirley Jackson (or perhaps <span style="color: var(--carmine)">The Ultimate Alphabet</span> by Mike Wilks); i recently finished <span style="color: var(--carmine)">House of Leaves</span> by Mark Z Danielewski. i plan to read <span style="color: var(--carmine)">The King in Yellow</span> next.</p>
     </div>
 </body>
 
-<footer style="width: 640px; margin: 0 auto;">
-    <hr style="border-color: var(--indigo);">
-    <a href="index.html">return to homepage</a>
-    <div style="text-align: right; float: right;"><a href="contact-me.html">contact me</a></div>
-    <p>website developed in pure HTML and CSS by me!</p>
-    <p>fonts used are the <a href="https://befonts.com/adelphe-font-family.html">Adelphe family</a> created by Eugénie Bidaut</p>
-</footer>
+<div w3-include-html="shared_footer.html"></div> 
+
+<script src="include_html.js"></script>
+<script>checkHTMLIncludes();</script>

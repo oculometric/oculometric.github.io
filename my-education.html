@@ -1,72 +1,95 @@
 <!DOCTYPE html>
-
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="styles.css" as="style"/>
+    <link rel="stylesheet" href="styles.css"/>
 </head>
 
 <body>
-    <div style="width: 640px; margin: 0 auto">
-        <div style="width: 100%; overflow: hidden">
-            <!--headline container-->
-            <div class="container">
-                <h1>my education</h1>
-            </div>
+    <br><br>
+    <header style="justify-content: space-between; align-items: center; background-color: var(--lighterblack);">
+        <span style="background-color: transparent;">
+            <span style="color:var(--carmine);">[</span>
+            cassette - portfolio
+            <span style="color:var(--carmine);">]</span>
+        </span>
+        <span style="float: right;">
+            <span style="color:var(--carmine);">[</span>
+            education
+            <span style="color:var(--carmine);">]</span>
+        </span>
+    </header>
+    <br>
 
-            <p style="text-align: right;">this page is ordered recent-first, to make it easier to navigate.</p>
-            <br/>
+    <p style="text-align: center;">this page is ordered recent-first.</p>
 
-            <div class="container">
-                <h2>Staffordshire University</h2>
-                <p>i'm currently studying Computer Games Programming at Staffordshire University.</p>
-                <p>i've finished my first year with top grades across all modules so far.</p>
-            </div>
+    <div class="bordered_box">
+        <span class="badge">
+            Staffordshire University
+        </span>
+        <span class="hollow_badge" style="float: right;">
+            2023 - 2026
+        </span>
+        <p>i'm currently studying Computer Games Programming at Staffordshire University.</p>
+        <p>i've finished my first and second years with top grades across all modules so far. i'm now working on my dissertation, looking at isosurface extraction, specifically using marching tetrahedra.</p>
+    </div>
 
-            <div class="container">
-                <h2>Gap Year (2022-2023)</h2>
-                <p>after my A levels, at the last minute i decided to take a gap year to explore my art interests. i spent the year practising with digital 3D media (specifically <b>Blender</b>), developing my interest in rendering and shading.</p>
-                <p>i also took a <b>Foundation Drawing course with the <a href="https://www.oca.ac.uk" target="_blank">OCA</a></b>, which greatly improved my ability to visualise and express ideas, as well as being extremely useful for general artistic principles of proportion, presentation, tone, etc which i continue to <i>draw</i> on.</p>
-                <p>this bit of self-exploration made me realise i wanted to pursue subjects which intersect art and programming, so late into my gap year i decided to reapply to university, cancelling my originally accepted offer for Computer Science and AI at Bath and applying instead for games design and programming courses.</p>
-            </div>
+    <div class="bordered_box">
+        <span class="badge">
+            Gap Year
+        </span>
+        <span class="hollow_badge" style="float: right;">
+            2022 - 2023
+        </span>
+        <p>after my A levels, at the last minute i decided to take a gap year to explore my art interests. i spent the year practising with digital 3D media (specifically <span style="color: var(--carmine)">Blender</span>), particularly developing my interest in rendering and shading.</p>
+        <br>
+        <p>i also took a <span style="color: var(--carmine)">Foundation Drawing</span> course with the <a href="https://www.oca.ac.uk" target="_blank">OCA</a>, which greatly improved my ability to visualise and express ideas, as well as being extremely useful for general artistic principles of proportion, presentation, tone, etc which i continue to <span style="color: var(--carmine)">draw</span> on.</p>
+        <p>this bit of self-exploration made me realise i wanted to pursue subjects which intersect art and programming, so late into my gap year i decided to reapply to university, cancelling my originally accepted offer for Computer Science and AI at Bath and applying instead for games design and programming courses.</p>
+    </div>
 
-            <div class="container">
-                <h2>A Levels (2020-2022)</h2>
-                <p>at A level i studied: </p>
-                <ul>
-                    <li>Pre-U Maths</li>
-                    <li>Pre-U Further Maths</li>
-                    <li>Computer Science</li>
-                    <li>Psychology</li>
-                </ul>
-                <p>i received distinctions in both mathematics subjects, an A* in computer science and an A in psychology.</p>
-                <p>additionally, i studied History of Art as an AS level, which helped develop my interest in art despite not being able to study art directly at A level.</p>
-            </div>
+    <div class="bordered_box">
+        <span class="badge">
+            A Levels
+        </span>
+        <span class="hollow_badge" style="float: right;">
+            2020 - 2022
+        </span>
+        <p>at A level i studied: </p>
+        <ul>
+            <li>Pre-U Maths</li>
+            <li>Pre-U Further Maths</li>
+            <li>Computer Science</li>
+            <li>Psychology</li>
+        </ul>
+        <p>i received distinctions in both mathematics subjects, an A* in computer science and an A in psychology.</p>
+        <p>additionally, i studied History of Art as an AS level, which helped develop my interest in art despite not being able to study art directly at A level. i really enjoyed getting to do a mixture of creative work in my preferred field, and analytical/historical work.</p>
+    </div>
 
-            <div class="container">
-                <h2>GCSEs (2018-2020)</h2>
-                <p>for GCSEs i studied:</p>
-                <ul>
-                    <li>Maths</li>
-                    <li>English Language</li>
-                    <li>English Literature</li>
-                    <li>Physics</li>
-                    <li>Chemistry</li>
-                    <li>Biology</li>
-                    <li>Latin</li>
-                    <li>German</li>
-                    <li>Music</li>
-                    <li>Design Technology</li>
-                    <li>Computer Science</li>
-                </ul>
-                <p>the last of which i taught myself (being already familiar with programming and various technical concepts), without formal tuition. i achieved top grades across all of the above.</p>
-            </div>
-        </div>
+    <div class="bordered_box">
+        <span class="badge">
+            GCSEs
+        </span>
+        <span class="hollow_badge" style="float: right;">
+            2018 - 2020
+        </span>
+        <p>for GCSEs i studied:</p>
+        <ul>
+            <li>Maths</li>
+            <li>English Language</li>
+            <li>English Literature</li>
+            <li>Physics</li>
+            <li>Chemistry</li>
+            <li>Biology</li>
+            <li>Latin</li>
+            <li>German</li>
+            <li>Music</li>
+            <li>Design Technology</li>
+            <li>Computer Science</li>
+        </ul>
+        <p>the last of which i taught myself (being already familiar with programming and various technical concepts), without formal tuition. i achieved top grades across all of the above.</p>
     </div>
 </body>
 
-<footer style="width: 640px; margin: 0 auto;">
-    <hr style="border-color: var(--indigo);">
-    <a href="index.html">return to homepage</a>
-    <div style="text-align: right; float: right;"><a href="contact-me.html">contact me</a></div>
-    <p>website developed in pure HTML and CSS by me!</p>
-    <p>fonts used are the <a href="https://befonts.com/adelphe-font-family.html">Adelphe family</a> created by Eugénie Bidaut</p>
-</footer>
+<div w3-include-html="shared_footer.html"></div> 
+
+<script src="include_html.js"></script>
+<script>checkHTMLIncludes();</script>

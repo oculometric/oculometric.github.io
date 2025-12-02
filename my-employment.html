@@ -1,47 +1,65 @@
 <!DOCTYPE html>
-
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="styles.css" as="style"/>
+    <link rel="stylesheet" href="styles.css"/>
 </head>
 
 <body>
-    <div style="width: 640px; margin: 0 auto">
-        <div style="width: 100%; overflow: hidden">
-            <!--headline container-->
-            <div class="container">
-                <h1>my employment</h1>
-            </div>
+    <br><br>
+    <header style="justify-content: space-between; align-items: center; background-color: var(--lighterblack);">
+        <span style="background-color: transparent;">
+            <span style="color:var(--carmine);">[</span>
+            cassette - portfolio
+            <span style="color:var(--carmine);">]</span>
+        </span>
+        <span style="float: right;">
+            <span style="color:var(--carmine);">[</span>
+            employment
+            <span style="color:var(--carmine);">]</span>
+        </span>
+    </header>
+    <br>
 
-            <p style="text-align: right;">this page is ordered recent-first, to make it easier to navigate.</p>
+    <p style="text-align: center;">this page is ordered recent-first.</p>
+
+    <div class="bordered_box">
+        <span class="badge">
+            1UP Scheme
+        </span>
+        <span class="hollow_badge" style="float: right;">
+            summer 2024
+        </span>
+        <p>1UP Scheme is an internship program run by Staffordshire University, which functions as the university's own in-house games development studio. i spent 6 weeks over summer 2024 working with a team of talented people (from all disciplines: artists, designers, and programmers), including fellow students from foundation to masters as well as university staff, to produce two games (<i>Disc-Go!</i> and <i>Mechhead</i>), though most of my time was spent on the former.</p>
+        <p>this was a really great opportunity to dive into the experience of actually working in a studio, before even entering my second year at university. i learned a lot about source control and collaboration in larger teams, and i adjusted well to the heirarchical but friendly environment.</p>
+        <p>i also learned about other people's workflows, which helped me to work more effectively with others. i found myself communicating frequently across departments to implement features, identify bugs, or iterate on ideas.</p>
+        <p>over the course of the project i taught myself how to use Unreal Engine's AI behaviour tree system.</p>
+        <p>my largest personal contribution was writing a system which allowed players to become idle or even disconnect their controllers, at which point an AI player would automatically take over after a certain amount of time, which could be integrated with UI elements (through event dispatchers) to display which player is which, and whether they are posessed by an AI.</p>
+        <p>a huge amount of information and understanding i quickly picked up from listening to others over the course of the project, including coming to better understand Unreal's Lumen realtime GI system; i think this highlights the highly collaborative and integrated nature of the environment.</p>
+        <div style="text-align: center; height: 2lh;">
             <br>
+            <a href="projects/1up-scheme.html" class="menu_link"><button>more info</button></a>
+        </div>
+    </div>
 
-            <div class="container">
-                <h2>1UP Scheme (summer 2024)</h2>
-                <p>1UP Scheme is an internship program run by Staffordshire University, which functions as the university's own in-house games development studio. i spent 6 weeks over summer 2024 working with a team of talented people (from all disciplines: artists, designers, and programmers), including fellow students from foundation to masters as well as university staff, to produce two games (<i>Disc-Go!</i> and <i>Mechhead</i>), though most of my time was spent on the former.</p>
-                <p>this was a really great opportunity to dive into the experience of actually working in a studio, before even entering my second year at university. i learned a lot about source control and collaboration in larger teams, and i adjusted well to the heirarchical but friendly environment.</p>
-                <p>i also learned about other people's workflows, which helped me to work more effectively with others. i found myself communicating frequently across departments to implement features, identify bugs, or iterate on ideas.</p>
-                <p>over the course of the project i taught myself how to use Unreal Engine's AI behaviour tree system.</p>
-                <p>my largest personal contribution was writing a system which allowed players to become idle or even disconnect their controllers, at which point an AI player would automatically take over after a certain amount of time, which could be integrated with UI elements (through event dispatchers) to display which player is which, and whether they are posessed by an AI.</p>
-                <p>a huge amount of information and understanding i quickly picked up from listening to others over the course of the project, including coming to better understand Unreal's Lumen realtime GI system; i think this highlights the highly collaborative and integrated nature of the environment.</p>
-                <div style="text-align:center"><a href="projects/1up-scheme.html">click here for more about the project</a></div>
-            </div>
-
-            <div class="container">
-                <h2>Movement Detroit commission (early 2024)</h2>
-                <p>i was commissioned to produce a short video to advertise the <a href="https://movementfestival.com" target="_blank">Movement Detroit</a> music festival. this was a really interesting project, since it was my first time working for a client.</p>
-                <p>for this project, i combined my hard-surface modelling and procedural texturing skills with video editing to produce an exciting clip for the festival. the finished product includes footage from previous festivals as well as 3D animations and wireframes i made specially for the project, tied together with fast-paced editing set to music chosen by the client.</p>
-                <p>i worked closely with the client, going through several iterations and communicating effectively to understand necessary changes to make the final product fit their needs.</p>
-                <p>along with the edited video, i provided the various 3D and custom video assets for the project.</p>
-                <div style="text-align: center"><a href="projects/movement-detroit.html">click here for more about the project</a></div>
-            </div>
+    <div class="bordered_box">
+        <span class="badge">
+            Movement Detroit commission
+        </span>
+        <span class="hollow_badge" style="float: right;">
+            early 2024
+        </span>
+        <p>i was commissioned to produce a short video to advertise the <a href="https://movementfestival.com" target="_blank">Movement Detroit</a> music festival. this was a really interesting project, since it was my first time working for a client.</p>
+        <p>for this project, i combined my hard-surface modelling and procedural texturing skills with video editing to produce an exciting clip for the festival. the finished product includes footage from previous festivals as well as 3D animations and wireframes i made specially for the project, tied together with fast-paced editing set to music chosen by the client.</p>
+        <p>i worked closely with the client, going through several iterations and communicating effectively to understand necessary changes to make the final product fit their needs.</p>
+        <p>along with the edited video, i provided the various 3D and custom video assets for the project.</p>
+        <div style="text-align: center; height: 2lh;">
+            <br>
+            <a href="projects/movement-detroit.html" class="menu_link"><button>more info</button></a>
         </div>
     </div>
 </body>
 
-<footer style="width: 640px; margin: 0 auto;">
-    <hr style="border-color: var(--indigo);">
-    <a href="index.html">return to homepage</a>
-    <div style="text-align: right; float: right;"><a href="contact-me.html">contact me</a></div>
-    <p>website developed in pure HTML and CSS by me!</p>
-    <p>fonts used are the <a href="https://befonts.com/adelphe-font-family.html">Adelphe family</a> created by Eugénie Bidaut</p>
-</footer>
+<div w3-include-html="shared_footer.html"></div> 
+
+<script src="include_html.js"></script>
+<script>checkHTMLIncludes();</script>

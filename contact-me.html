@@ -1,52 +1,57 @@
 <!DOCTYPE html>
-
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="styles.css" as="style"/>
+    <link rel="stylesheet" href="styles.css"/>
 </head>
 
 <body>
-    <div style="width: 640px; margin: 0 auto">
-        <div style="width: 100%; overflow: hidden">
-            <!--headline container-->
-            <div class="container">
-                <h1>contact me</h1>
-            </div>
+    <br><br>
+    <header style="justify-content: space-between; align-items: center; background-color: var(--lighterblack);">
+        <span style="background-color: transparent;">
+            <span style="color:var(--carmine);">[</span>
+            cassette - portfolio
+            <span style="color:var(--carmine);">]</span>
+        </span>
+        <span style="float: right;">
+            <span style="color:var(--carmine);">[</span>
+            contact me
+            <span style="color:var(--carmine);">]</span>
+        </span>
+    </header>
+    <br>
 
-            <div class="container" style="width: 30%; height: 320px; float: left">
-                <p>you can find me in a lot of places online, either just under my name <i>Cassette Costen (or previously Jacob)</i>, or under the name <b>oculometric</b>. below are some email addresses you can reach me on, and to the right are some links to useful places.</p>
-                <br>
-                <a href="mailto: jake.costen@icloud.com">jake.costen@icloud.com</a>
-                <br>
-                <a href="mailto: jcostenart@gmail.com">jcostenart@gmail.com</a>
-            </div>
-
-            <div class="container" style="width: 30%; height: 320px; text-align: right; float: right;">
-                <h2>useful links</h2>
-                <a href="https://github.com/oculometric" target="_blank">Github</a>
-                <br>
-                <a href="https://oculometric.artstation.com" target="_blank">Artstation</a>
-                <br>
-                <a href="https://instagram.com/oculometric" target="_blank">Instagram</a>
-                <br>
-                <a href="https://www.linkedin.com/in/jacob-costen" target="_blank">Linkedin</a>
-            </div>
-
-            <div style="position: relative; width: 20%; height: 320px; left: 256px; display: block;">
-                <svg style="position: absolute; left: 0; top: 0; width: 100%; height: 100%" viewBox="0 0 256 256" preserveAspectRatio="none">
-                    <path
-                        style="color: #000000; fill: var(--gold); stroke: none; stroke-width: 0.264582; stroke-linecap: square; -inkscape-stroke: none"
-                        d="M 128.00013,0 C 122.64213,30.302427 116.5096,61.735779 99.617376,87.990774 82.583468,111.09621 35.454652,122.53307 0,127.99959 c 30.302594,5.35834 61.736142,11.49097 87.991152,28.38323 18.241028,13.44779 24.540808,36.79204 30.967468,57.40535 3.83299,13.87756 6.84767,27.98331 9.04151,42.21183 C 143.04442,170.92044 154.3345,143.67604 256,127.99959 225.69752,122.64159 194.26455,116.50901 168.00958,99.617054 149.76842,86.16931 143.46844,62.825012 137.04163,42.211699 133.20898,28.335157 130.19382,14.227408 128.00013,0 Z"
-                    />
-                </svg>
-            </div>
+    <span style="z-index: -2; background: url(projects/bunny-flying.gif); width: 100%; aspect-ratio: calc(4/3); display: inline-block;">
+        <div class="bordered_box" style="width: 30%; float: left;">
+            <br>
+            <p>you can find me in a lot of places online, either just under my name Cassette Costen (previously Jacob), or under the name <span style="color: var(--carmine)">oculometric</span>. below are some email addresses you can reach me on, and to the right are some links to useful places.</p>
+            <br>
+            <a href="mailto: jake.costen@icloud.com" style="padding-left: 2ch;">jake.costen@icloud.com</a>
+            <a href="mailto: jcostenart@gmail.com" style="padding-left: 2ch;">jcostenart@gmail.com</a>
         </div>
-    </div>
+
+        <div class="bordered_box" style="width: 30%; text-align: right; float: right;">
+            <span class="badge">useful links</span>
+            <p style="padding-top: 1lh;"></p>
+            <a href="https://github.com/oculometric" target="_blank" class="menu_link">
+                <button style="width:100%;">[ Github ]</button>
+            </a>
+            <a href="https://oculometric.artstation.com" target="_blank" class="menu_link">
+                <button style="width:100%;">[ Artstation ]</button>
+            </a>
+            <a href="https://instagram.com/oculometric" target="_blank" class="menu_link">
+                <button style="width:100%;">[ Instagram ]</button>
+            </a>
+            <a href="https://www.linkedin.com/in/jacob-costen" target="_blank" class="menu_link">
+                <button style="width:100%;">[ Linkedin ]</button>
+            </a>
+            <br>
+        </div>
+    </span>
+    <br>
+    <br>
 </body>
 
-<footer style="width: 640px; margin: 0 auto;">
-    <hr style="border-color: var(--indigo);">
-    <a href="index.html">return to homepage</a>
-    <div style="text-align: right; float: right;"><a href="contact-me.html">contact me</a></div>
-    <p>website developed in pure HTML and CSS by me!</p>
-    <p>fonts used are the <a href="https://befonts.com/adelphe-font-family.html">Adelphe family</a> created by Eugénie Bidaut</p>
-</footer>
+<div w3-include-html="shared_footer.html"></div> 
+
+<script src="include_html.js"></script>
+<script>checkHTMLIncludes();</script>

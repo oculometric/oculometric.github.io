@@ -10,21 +10,35 @@
     --gold: #f2a11a;
     --carmine: #cf2e1d;
     --indigo: #642e96;
+    --column-width: 768px;
+    --line-height: 22px;
+    --border-width: 2px;
 }
 
 *
 {
     font-size: 16px;
     font-family: CASS_BITMAP;
-    --line-height: 22px;
     line-height: var(--line-height);
-    --border-width: 2px;
     -webkit-text-size-adjust: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: var(--gold);
     background-color: var(--nearblack);
+}
+
+body
+{
+    max-width: var(--column-width);
+    margin:auto;
+    padding-left: 1ch;
+    padding-right: 1ch;
+}
+
+div
+{
+    background-color: inherit;
 }
 
 div.bordered_box
@@ -57,7 +71,8 @@ span
     background-color: transparent;
 }
 
-span.badge
+span.badge,
+span.hollow_badge
 {
     color: var(--nearblack);
     background-color: var(--gold);
@@ -66,6 +81,12 @@ span.badge
     height: 1lh;
     padding-left: 1ch;
     padding-right: 1ch;
+}
+
+span.hollow_badge
+{
+    background-color: inherit;
+    color: var(--carmine);
 }
 
 p
@@ -118,6 +139,7 @@ img
 a
 {
     background-color: inherit;
+    color: var(--indigo);
 }
 
 a.menu_link
