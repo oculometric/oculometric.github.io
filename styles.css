@@ -53,10 +53,10 @@ a.menu_link
 
 :root
 {
-    --nearblack: rgb(2, 4, 20);
-    --gold: rgb(242, 161, 26);
-    --carmine: rgb(207, 46, 29);
-    --indigo: rgb(100, 46, 150);
+    --nearblack: #020414;
+    --gold: #f2a11a;
+    --carmine: #cf2e1d;
+    --indigo: #642e96;
 }
 
 *
