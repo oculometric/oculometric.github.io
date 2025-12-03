@@ -1,59 +1,62 @@
 <!DOCTYPE html>
-
 <head>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="preload" href="../styles.css" as="style"/>
+    <link rel="stylesheet" href="../styles.css"/>
 </head>
 
 <body>
-    <div style="width: 640px; margin: 0 auto">
-        <div style="width: 100%; overflow: hidden">
-            <div class="container">
-                <h1>project - 'Untitled Stairway II'</h1>
-            </div>
+    <br><br>
+    <header style="justify-content: space-between; align-items: center; background-color: var(--lighterblack);">
+        <span style="background-color: transparent;">
+            <span style="color:var(--carmine);">[</span>
+            cassette - portfolio
+            <span style="color:var(--carmine);">]</span>
+        </span>
+        <span style="float: right;">
+            <span style="color:var(--carmine);">[</span>
+            project - 'Untitled Stairway II'
+            <span style="color:var(--carmine);">]</span>
+        </span>
+    </header>
+    <br>
 
-            <a href="https://oculometric.artstation.com/projects/49eR5l" style="display: block; text-align: center;">Artstation project</a>
-            
-            <br/>
+    <a href="https://oculometric.artstation.com/projects/49eR5l" style="display: block; text-align: center;">
+        <button>Artstation project</button>
+    </a>
 
-            <div class="container" style="border-color: var(--indigo);">
-                <img src="untitled-stairway.jpg" style="display: block; width: 100%">
-            </div>
+    <div class="bordered_box"><br>
+        <img src="untitled-stairway.jpg" style="display: block; width: 100%">
+    </div>
 
-            <div class="container">
-                <p>'Untitled Stairway II' is an exercise in visual storytelling, following a 4-panel comic style. this is all made entirely within Blender, save for combining the four panels at the end using GIMP.</p>
-                <br>
-                <p>i developed the graphite art style over the course of previous projects, and it consists of materials with special AOV passthrough properties, careful lighting, and a complex compositing setup that takes into account rendered colour, normals, ambient occlusion, and the AOV passthrough to produce the final output.</p>
-                <br>
-                <p>i challenged myself with this project to experiment with ways different elements might decay: the cardboard box the TV is sitting on crumples; the orrery gets broken; tiles get dislodged; meanwhile ivy, grass, and the spider-plant thrive. i made use of shape keys/blend shapes for the spider-plant, tiles, and cardboard box.</p>
-            </div>
+    <div class="bordered_box"><br>
+        <p>'Untitled Stairway II' is an exercise in visual storytelling, following a 4-panel comic style. this is all made entirely within Blender, save for combining the four panels at the end using GIMP.</p>
+        <br>
+        <p>i developed the graphite art style over the course of previous projects, and it consists of materials with special AOV passthrough properties, careful lighting, and a complex compositing setup that takes into account rendered colour, normals, ambient occlusion, and the AOV passthrough to produce the final output.</p>
+        <br>
+        <p>i challenged myself with this project to experiment with ways different elements might decay: the cardboard box the TV is sitting on crumples; the orrery gets broken; tiles get dislodged; meanwhile ivy, grass, and the spider-plant thrive. i made use of shape keys/blend shapes for the spider-plant, tiles, and cardboard box.</p>
+    </div>
 
-            <div class="container" style="border-color: var(--indigo);">
+    <div class="bordered_box"><br>
                 <img src="untitled-stairway-1.jpg" style="display: block; width: 100%">
-            </div>
-
-            <div class="container">
-                <p>the ivy is procedurally grown using a script I wrote in python for Blender (in fact, the Unity script i wrote for A Lonely Greenhouse is based heavily on this script), and I then used geometry nodes and keyframe animation across 4 frames to make it look as if the ivy grows over time.</p>
+        <p>the ivy is procedurally grown using a script I wrote in python for Blender (in fact, the Unity script i wrote for A Lonely Greenhouse is based heavily on this script), and I then used geometry nodes and keyframe animation across 4 frames to make it look as if the ivy grows over time.</p>
                 <br>
                 <p>mostly this project was practice turning a simple starting scene into a complex, 'well-used' feeling endpoint, by iterating on the scene and concept.</p>
-            </div>
-
-            <div class="container" style="border-color: var(--indigo);">
                 <img src="untitled-stairway-2.jpg" style="display: block; width: 100%">
-            </div>
-
-            <div class="container" style="border-color: var(--indigo);">
-                <img src="untitled-stairway-tree.jpg" style="display: block; width: 100%">
-            </div>
-
-            <a href="https://oculometric.artstation.com/albums/7363541" style="display: block; text-align: center;">see more of my artworks in the graphite style here</a>
-        </div>
+        <span class="badge" style="display: block; float:right;">before and after</span>
     </div>
+
+    <div class="bordered_box"><br>
+        <img src="untitled-stairway-tree.jpg" style="display: block; width: 100%">
+        <span class="badge" style="display: block; float:right;">compositing node tree</span>
+    </div>
+
+    <a href="https://oculometric.artstation.com/albums/7363541" style="display: block; text-align: center;">
+        <button>more works in this style</button>
+    </a>
+    <br>
 </body>
 
-<footer style="width: 640px; margin: 0 auto;">
-    <hr style="border-color: var(--indigo);">
-    <a href="../index.html">return to homepage</a>
-    <div style="text-align: right; float: right;"><a href="contact-me.html">contact me</a></div>
-    <p>website developed in pure HTML and CSS by me!</p>
-    <p>fonts used are the <a href="https://befonts.com/adelphe-font-family.html">Adelphe family</a> created by Eugénie Bidaut</p>
-</footer>
+<div w3-include-html="../shared_footer.html"></div> 
+
+<script src="../include_html.js"></script>
+<script>checkHTMLIncludes();</script>

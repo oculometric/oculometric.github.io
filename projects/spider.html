@@ -1,53 +1,49 @@
 <!DOCTYPE html>
-
 <head>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="preload" href="../styles.css" as="style"/>
+    <link rel="stylesheet" href="../styles.css"/>
 </head>
 
 <body>
-    <div style="width: 640px; margin: 0 auto">
-        <div style="width: 100%; overflow: hidden">
-            <div class="container">
-                <h1>project - mechanical spider</h1>
-            </div>
+    <br><br>
+    <header style="justify-content: space-between; align-items: center; background-color: var(--lighterblack);">
+        <span style="background-color: transparent;">
+            <span style="color:var(--carmine);">[</span>
+            cassette - portfolio
+            <span style="color:var(--carmine);">]</span>
+        </span>
+        <span style="float: right;">
+            <span style="color:var(--carmine);">[</span>
+            project - mechanical spider
+            <span style="color:var(--carmine);">]</span>
+        </span>
+    </header>
+    <br>
 
-            <a href="https://oculometric.artstation.com/projects/dK0J91" style="display: block; text-align: center;">Artstation project</a>
-            
-            <br/>
+    <a href="https://oculometric.artstation.com/projects/dK0J91" style="display: block; text-align: center;">
+        <button>Artstation project</button>
+    </a>
 
-            <div class="container" style="border-color: var(--indigo);">
-                <img src="spider-1.jpg" style="display: block; width: 100%">
-            </div>
-
-            <div class="container">
-                <p>this project was a study in hard-surface modelling, rigging, and animation. after some very basic sketches i moved into Blender to model this eight-legged friend. 4 joints per leg, and a movable eye/camera unit in the center of its body, it's fully rigged with inverse kinematics.</p>
-                <br>
-                <p>its materials are procedural using Blender's shader nodes, combined with weight painting to be rustier in certain places (around joints).</p>
-            </div>
-
-            <div class="container" style="border-color: var(--indigo);">
-                <img src="spider-2.gif" style="display: block; width: 100%">
-            </div>
-
-            <div class="container">
-                <p>i animated a looping walk cycle (or more like a scuttling cycle) for the spider, though i never got around to animating any other actions</p>
-                <br>
-                <p>i actually made this for an Unreal project where you would control two different spider enemies and switch between their body-camera-eyes to navigate them around a room and solve spatial puzzles.</p>
-                <br>
-                <p>the model totals 20k tris, which is a fair few, but i made an effort to keep it minimal (especially with all the small joints and details)</p>
-            </div>
-
-            <div class="container" style="border-color: var(--indigo);">
-                <img src="spider-3.png" style="display: block; width: 100%">
-            </div>
-        </div>
+    <div class="bordered_box"><br>
+        <img src="spider-2.gif" style="display: block; width: 100%">
+        <p>this project was a study in hard-surface modelling, rigging, and animation. after some very basic sketches i moved into Blender to model this eight-legged friend. 4 joints per leg, and a movable eye/camera unit in the center of its body, it's fully rigged with inverse kinematics.</p>
+        <br>
+        <p>its materials are procedural using Blender's shader nodes, combined with weight painting to be rustier in certain places (around joints).</p>
     </div>
+
+    <div class="bordered_box"><br>
+        <p>i animated a looping walk cycle (or more like a scuttling cycle) for the spider, though i never got around to animating any other actions</p>
+        <br>
+        <p>i originally made this for an Unreal project (which didn't get very far) where you would control two different spiders and switch between their body-camera-eyes to navigate them around a room and solve spatial puzzles.</p>
+        <br>
+        <p>the model totals 20k tris, which is a fair few, but i made an effort to keep it minimal (especially with all the small joints and details)</p>
+        <img src="spider-3.png" style="display: block; width: 100%">
+        <span class="badge" style="display: block; float:right;">wireframe view</span>
+    </div>
+    <br>
 </body>
 
-<footer style="width: 640px; margin: 0 auto;">
-    <hr style="border-color: var(--indigo);">
-    <a href="../index.html">return to homepage</a>
-    <div style="text-align: right; float: right;"><a href="contact-me.html">contact me</a></div>
-    <p>website developed in pure HTML and CSS by me!</p>
-    <p>fonts used are the <a href="https://befonts.com/adelphe-font-family.html">Adelphe family</a> created by Eugénie Bidaut</p>
-</footer>
+<div w3-include-html="../shared_footer.html"></div> 
+
+<script src="../include_html.js"></script>
+<script>checkHTMLIncludes();</script>

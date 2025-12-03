@@ -1,58 +1,60 @@
 <!DOCTYPE html>
-
 <head>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="preload" href="../styles.css" as="style"/>
+    <link rel="stylesheet" href="../styles.css"/>
 </head>
 
 <body>
-    <div style="width: 640px; margin: 0 auto">
-        <div style="width: 100%; overflow: hidden">
-            <div class="container">
-                <h1>project - agaricus obscura</h1>
-            </div>
+    <br><br>
+    <header style="justify-content: space-between; align-items: center; background-color: var(--lighterblack);">
+        <span style="background-color: transparent;">
+            <span style="color:var(--carmine);">[</span>
+            cassette - portfolio
+            <span style="color:var(--carmine);">]</span>
+        </span>
+        <span style="float: right;">
+            <span style="color:var(--carmine);">[</span>
+            project - agaricus obscura
+            <span style="color:var(--carmine);">]</span>
+        </span>
+    </header>
+    <br>
 
-            <a href="https://oculometric.artstation.com/projects/n0RkD4" style="display: block; text-align: center;">Artstation project</a>
-            <a href="https://github.com/oculometric/agaricus-obscura" style="display: block; text-align: center;">Github repository</a>
-            
-            <br/>
+    <a href="https://oculometric.artstation.com/projects/n0RkD4" style="display: block; text-align: center;">
+        <button>Artstation project</button>
+    </a>
+    <a href="https://github.com/oculometric/agaricus-obscura" style="display: block; text-align: center;">
+        <button>Github repository</button>
+    </a>
 
-            <div class="container" style="border-color: var(--indigo);">
-                <img src="agaricus-obscura/agaricus-obscura.gif" style="display: block; width: 100%">
-            </div>
-
-            <div class="container">
-                <p>agaricus obscura is a text-only terminal game i created for an assinment for one of my first year modules at Staffordshire University.</p>
-                <br>
-                <p>the game is heavily inspired by the dungeons from the original Legend of Zelda game from 1986. mechanically the game is very simple. you move around the room, destroy fungi tiles with your sword or bombs, until you've cleared the room.</p>
-                <p>fungi tiles grow continuously for every turn you take, so you have to be strategic. touching a fungi tile costs you health. bombs, health pickups, max health/range upgrades, and barriers (which can be placed to block the growth of fungi).</p>
-                <p>rooms are semi-procedural and you can explore the labyrinth in any direction.</p>
-            </div>
-
-            <div class="container" style="border-color: var(--indigo);">
-                <img src="agaricus-obscura/agaricus-obscura-2.gif" style="display: block; width: 100%">
-            </div>
-
-            <div class="container">
-                <p>the game is written in C++, and is only properly compatible with Windows due to various terminal-formatting nuances.</p>
-                <br>
-                <p>the actual requirement was to develop a text-based game, though there was no requirement for it to actually be purely a 'text adventure' type game, hence my more graphical approach.</p>
-                <br>
-                <p>i developed a multi-layered screen buffering system to enable the various elements of powerups, walls, players, and fungi to coexist, as well as a system for rendering that information into the terminal as UTF-8 Unicode characters.</p>
-                <br>
-                <p>you can download the project source from the Github link above, or just the executable to run on Windows and play for yourself. contact me with your highscore and i'll start a leaderboard.</p>
-            </div>
-
-            <div class="container" style="border-color: var(--indigo);">
-                <img src="agaricus-obscura/agaricus-obscura-3.gif" style="display: block; width: 100%">
-            </div>
-        </div>
+    <div class="bordered_box"><br>
+        <p>agaricus obscura is a text-only terminal game i created for an assinment for one of my first year modules at Staffordshire University.</p>
+        <img src="agaricus-obscura/agaricus-obscura.gif" style="display: block; width: 100%">
+        <span class="badge" style="display: block; float:right;">the game's intro sequence</span>
     </div>
+
+    <div class="bordered_box"><br>
+        <p>the game is heavily inspired by the dungeons from the original Legend of Zelda game from 1986. mechanically the game is very simple. you move around the room, destroy fungi tiles with your sword or bombs, until you've cleared the room.</p>
+        <p>fungi tiles grow continuously for every turn you take, so you have to be strategic. touching a fungi tile costs you health. bombs, health pickups, max health/range upgrades, and barriers (which can be placed to block the growth of fungi).</p>
+        <p>rooms are semi-procedural and you can explore the labyrinth in any direction.</p>
+        <img src="agaricus-obscura/agaricus-obscura-2.gif" style="display: block; width: 100%">
+        <span class="badge" style="display: block; float:right;">i got pretty good at the game during testing</span>
+    </div>
+
+    <div class="bordered_box"><br>
+        <img src="agaricus-obscura/agaricus-obscura-3.gif" style="display: block; width: 100%">
+        <p>the game is written in C++, and is only properly compatible with Windows due to various terminal-formatting nuances.</p>
+        <br>
+        <p>the actual requirement was to develop a text-based game, though there was no requirement for it to actually be purely a 'text adventure' type game, hence my more graphical approach.</p>
+        <br>
+        <p>i developed a multi-layered screen buffering system to enable the various elements of powerups, walls, players, and fungi to coexist, as well as a system for rendering that information into the terminal as UTF-8 Unicode characters.</p>
+        <br>
+        <p>you can download the project source from the Github link above, or just the executable to run on Windows and play for yourself. contact me with your highscore and i'll start a leaderboard or something.</p>
+    </div>
+    <br>
 </body>
 
-<footer style="width: 640px; margin: 0 auto;">
-    <hr style="border-color: var(--indigo);">
-    <a href="../index.html">return to homepage</a>
-    <div style="text-align: right; float: right;"><a href="contact-me.html">contact me</a></div>
-    <p>website developed in pure HTML and CSS by me!</p>
-    <p>fonts used are the <a href="https://befonts.com/adelphe-font-family.html">Adelphe family</a> created by Eugénie Bidaut</p>
-</footer>
+<div w3-include-html="../shared_footer.html"></div> 
+
+<script src="../include_html.js"></script>
+<script>checkHTMLIncludes();</script>

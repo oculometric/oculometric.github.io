@@ -1,59 +1,56 @@
 <!DOCTYPE html>
-
 <head>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="preload" href="../styles.css" as="style"/>
+    <link rel="stylesheet" href="../styles.css"/>
 </head>
 
 <body>
-    <div style="width: 640px; margin: 0 auto">
-        <div style="width: 100%; overflow: hidden">
-            <div class="container">
-                <h1>project - Tate Modern & Tate Britain</h1>
-            </div>
+    <br><br>
+    <header style="justify-content: space-between; align-items: center; background-color: var(--lighterblack);">
+        <span style="background-color: transparent;">
+            <span style="color:var(--carmine);">[</span>
+            cassette - portfolio
+            <span style="color:var(--carmine);">]</span>
+        </span>
+        <span style="float: right;">
+            <span style="color:var(--carmine);">[</span>
+            project - Tate Modern, Tate Britain
+            <span style="color:var(--carmine);">]</span>
+        </span>
+    </header>
+    <br>
 
-            <a href="https://oculometric.artstation.com/projects/qQkPdL" style="display: block; text-align: center;">You Keep Telling Me What to Do</a>
-            
-            <br/>
-            
-            <div class="container" style="border-color: var(--indigo);">
-                <img src="tate-britain.jpg" style="display: block; width: 100%">
-            </div>
+    <a href="https://oculometric.artstation.com/projects/qQkPdL" style="display: block; text-align: center;">
+        <button>'You Keep Telling Me What To Do'</button>
+    </a>
 
-            <div class="container">
-                <p>this is a digital artwork i created using Blender for an open call for submissions held by Tate Collective in August 2022, on a brief of 'Cyborg Futures'.</p>
-                <br>
-                <p>my piece was selected to be exhibited in the Tate Britain in London alongside around 80 others.</p>
-                <br>
-                <p>i created every part of the work from scratch, including modelling and rigging the robotic arm, designing the materials, and developing a complex compositing process to produce the stylised 'graphite' overall look. you can read more about my graphite style projects <a href="graphite.html">here</a>.</p>
-            </div>
-
-            <a href="https://oculometric.artstation.com/projects/YKwGbq" style="display: block; text-align: center;">Apples</a>
-            
-            <br/>
-
-            <div class="container" style="border-color: var(--indigo);">
-                <img src="apples.png" style="display: block; width: 100%">
-            </div>
-            
-            <div class="container">
-                <p>this piece was my submission for another open call held by Tate Collective, this one in November 2022, celebrating the work of Paul Cezanne.</p>
-                <br>
-                <p>it was selected along with just 9 others to be exhibited in the Tate Modern in London.</p>
-                <br>
-                <p>the character shown in the bottom left was something i challenged myself to model and rig for a previous project. the apples in the well in the center were placed with a combination of physics simulation and manual manipulation. the materials on the walls, apples, floor, etc, were of course all procedurally created within Blender</p>
-            </div>
-
-            <div class="container">
-                <p>both of these artworks were great fun to create, giving me a chance to show off compositing techniques and my love for surrealism.</p>
-            </div>
-        </div>
+    <div class="bordered_box"><br>
+        <img src="tate-britain.jpg" style="display: block; width: 100%">
+        <p>this is a digital artwork i created using Blender for an open call for submissions held by Tate Collective in August 2022, on a brief of 'Cyborg Futures'.</p>
+        <br>
+        <p>my piece was selected to be exhibited in the Tate Britain in London alongside around 80 others.</p>
+        <br>
+        <p>i created every part of the work from scratch, including modelling and rigging the robotic arm, designing the materials, and developing a complex compositing process to produce the stylised 'graphite' overall look. you can see more about my graphite style projects <a href="https://oculometric.artstation.com/albums/7363541">here</a>.</p>
+        <span class="badge" style="display: block; float:right;">Tate Britain</span>
     </div>
+
+    <a href="https://oculometric.artstation.com/projects/YKwGbq" style="display: block; text-align: center;">
+        <button>'Apples'</button>
+    </a>
+
+    <div class="bordered_box"><br>
+        <img src="apples.png" style="display: block; width: 100%">
+        <p>this piece was my submission for another open call held by Tate Collective, this one in November 2022, celebrating the work of Paul Cezanne.</p>
+        <br>
+        <p>it was selected along with just 9 others to be exhibited in the Tate Modern in London.</p>
+        <br>
+        <p>the character shown in the bottom left was something i challenged myself to model and rig for a previous project. the apples in the well in the center were placed with a combination of physics simulation and manual manipulation. the materials on the walls, apples, floor, etc, were of course all procedurally created within Blender</p>
+        <span class="badge" style="display: block; float:right;">Tate Modern</span>
+    </div>
+    <br>
 </body>
 
-<footer style="width: 640px; margin: 0 auto;">
-    <hr style="border-color: var(--indigo);">
-    <a href="index.html">return to homepage</a>
-    <div style="text-align: right; float: right;"><a href="contact-me.html">contact me</a></div>
-    <p>website developed in pure HTML and CSS by me!</p>
-    <p>fonts used are the <a href="https://befonts.com/adelphe-font-family.html">Adelphe family</a> created by Eugénie Bidaut</p>
-</footer>
+<div w3-include-html="../shared_footer.html"></div> 
+
+<script src="../include_html.js"></script>
+<script>checkHTMLIncludes();</script>

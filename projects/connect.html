@@ -1,69 +1,66 @@
 <!DOCTYPE html>
-
 <head>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="preload" href="../styles.css" as="style"/>
+    <link rel="stylesheet" href="../styles.css"/>
 </head>
 
 <body>
-    <div style="width: 640px; margin: 0 auto">
-        <div style="width: 100%; overflow: hidden">
-            <div class="container">
-                <h1>project - 'connect'</h1>
-            </div>
+    <br><br>
+    <header style="justify-content: space-between; align-items: center; background-color: var(--lighterblack);">
+        <span style="background-color: transparent;">
+            <span style="color:var(--carmine);">[</span>
+            cassette - portfolio
+            <span style="color:var(--carmine);">]</span>
+        </span>
+        <span style="float: right;">
+            <span style="color:var(--carmine);">[</span>
+            project - 'connect'
+            <span style="color:var(--carmine);">]</span>
+        </span>
+    </header>
+    <br>
 
-            <a href="https://oculometric.artstation.com/projects/8bQA6n" style="display: block; text-align: center;">Artstation project</a>
-            
-            <br/>
+    <a href="https://oculometric.artstation.com/projects/8bQA6n" style="display: block; text-align: center;">
+        <button>Artstation project</button>
+    </a>
 
-            <div class="container" style="border-color: var(--indigo);">
-                <img src="connect/connect.jpg" style="display: block; width: 100%">
-            </div>
-
-            <div class="container">
-                <p>this is a recent poster-style art project i created using Blender and Inkscape. 'connect' is a space-themed surreal piece where i'm combining 3D work including modelling, procedural texturing, and generative geometry with 2D graphic elements using a complex compositing setup.</p>
-            </div>
-
-            <div class="container" style="border-color: var(--indigo);">
-                <img src="connect/connect-detail.png" style="display: block; width: 100%">
-            </div>
-
-            <div class="container">
-                <p>the gas giant planet in the background, somewhat inspired by Jupiter, is entirely procedural using Blender's shader nodes (see below). this closeup also highlights the details of the compositing process, including the glow of the graphic background elements, and the grain and lens noise effects. again, see below for detials of these effects.</p>
-            </div>
-
-            <div class="container" style="border-color: var(--indigo);">
-                <img src="connect/connect-planet.jpg" style="display: block; width: 100%">
-            </div>
-
-            <div class="container" style="border-color: var(--indigo);">
-                <img src="connect/connect-compositing.jpg" style="display: block; width: 100%">
-            </div>
-
-            <div class="container">
-                <p>projects like this, as well as giving me the chance to express the impression of a dream-like place out of time, give me a great opportunity to stretch my procedural shader work and experimental way of developing. i particularly love Blender's node-based approach to this because it makes it easier to work on the art side of building effects, rather than the programming side. however, i have done work in other projects to recreate post-processing effects like this as full-screen shaders.</p>
-                <br>
-                <p>the only part of this project not made by me is the image of clouds, which is CC0 licensed. and like, Blender and Inkscape obviously.</p>
-            </div>
-
-            <div class="container">
-                <iframe width="628" height="315" src="https://www.youtube.com/embed/HN9uYFD7f1Q?si=TyJxiJ6n7vpeorJx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-
-            <div class="container" style="border-color: var(--indigo);">
-                <img src="connect/connect-room.jpg" style="display: block; width: 100%">
-            </div>
-
-            <div class="container">
-                <p>other artworks by me in the same style: <a href="https://oculometric.artstation.com/projects/vDlaPx">'navigate'</a></p>
-            </div>
-        </div>
+    <div class="bordered_box"><br>
+        <img src="connect/connect.jpg" style="display: block; width: 100%">
+        <span class="badge" style="display: block; float:right;">connect.jpg</span>
     </div>
+
+    <div class="bordered_box"><br>
+        <p>this is a poster-style art project i created using Blender and Inkscape. 'connect' is a space-themed surreal piece where i'm combining 3D work including modelling, procedural texturing, and generative geometry with 2D graphic elements using a complex compositing setup.</p>
+        <img src="connect/connect-detail.png" style="display: block; width: 100%">
+        <span class="badge" style="display: block; float:right;">closeup</span>
+    </div>
+
+    <div class="bordered_box"><br>
+        <img src="connect/connect-planet.jpg" style="display: block; width: 100%">
+        <p>the gas giant planet in the background, somewhat inspired by Jupiter, is entirely procedural using Blender's shader nodes (see above). the closeup also highlights the details of the compositing process, including the glow of the graphic background elements, and the grain and lens noise effects. see below for details of these effects.</p>
+        <img src="connect/connect-compositing.jpg" style="display: block; width: 100%">
+    </div>
+
+    <div class="bordered_box"><br>
+        <p>projects like this, as well as giving me the chance to express the impression of a dream-like place out of time, give me a great opportunity to stretch my procedural shader work and experimental way of developing. i particularly love Blender's node-based approach to this because it makes it easier to work on the art side of building effects, rather than the programming side. however, i have done work in other projects to recreate post-processing effects like this as full-screen shaders.</p>
+        <br>
+        <p>the only part of this project not made by me is the image of clouds, which is CC0 licensed. and like, Blender and Inkscape obviously.</p>
+        <iframe width="100%" height="515" src="https://www.youtube.com/embed/HN9uYFD7f1Q?si=TyJxiJ6n7vpeorJx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <span class="badge" style="display: block; float:right;">breakdown of compositing steps</span>
+    </div>
+
+    <div class="bordered_box"><br>
+        <img src="connect/connect-room.jpg" style="display: block; width: 100%">
+        <span class="badge" style="display: block; float:right;">inside the room</span>
+    </div>
+
+    <a href="https://oculometric.artstation.com/projects/vDlaPx" style="display: block; text-align: center;">
+        <button>similar project: 'navigate'</button>
+    </a>
+    <br>
 </body>
 
-<footer style="width: 640px; margin: 0 auto;">
-    <hr style="border-color: var(--indigo);">
-    <a href="../index.html">return to homepage</a>
-    <div style="text-align: right; float: right;"><a href="contact-me.html">contact me</a></div>
-    <p>website developed in pure HTML and CSS by me!</p>
-    <p>fonts used are the <a href="https://befonts.com/adelphe-font-family.html">Adelphe family</a> created by Eugénie Bidaut</p>
-</footer>
+<div w3-include-html="../shared_footer.html"></div> 
+
+<script src="../include_html.js"></script>
+<script>checkHTMLIncludes();</script>

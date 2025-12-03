@@ -36,7 +36,7 @@ var projects =
         [ "C++", "graphics", "Vulkan" ],
         "https://github.com/oculometric/planetarium", "Github" ],
     [ "A Lonely Greenhouse", 
-        "Sep 2023", 
+        "Apr - Sep 2023", 
         "a lo-fi, pixel-art puzzle game about exploring an abandoned greenhouse above the clouds.", 
         "projects/greenhouse.html", 
         "projects/greenhouse/greenhouse-thumb.jpg",
