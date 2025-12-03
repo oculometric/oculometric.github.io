@@ -1,35 +1,41 @@
 <!DOCTYPE html>
-
 <head>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="preload" href="../styles.css" as="style"/>
+    <link rel="stylesheet" href="../styles.css"/>
 </head>
 
 <body>
-    <div style="width: 640px; margin: 0 auto">
-        <div style="width: 100%; overflow: hidden">
-            <div class="container">
-                <h1>project - name</h1>
-            </div>
+    <br><br>
+    <header style="justify-content: space-between; align-items: center; background-color: var(--lighterblack);">
+        <span style="background-color: transparent;">
+            <span style="color:var(--carmine);">[</span>
+            cassette - portfolio
+            <span style="color:var(--carmine);">]</span>
+        </span>
+        <span style="float: right;">
+            <span style="color:var(--carmine);">[</span>
+            project - NAME
+            <span style="color:var(--carmine);">]</span>
+        </span>
+    </header>
+    <br>
 
-            <a href="link" style="display: block; text-align: center;">link</a>
-            
-            <br/>
+    <a href="https://github.com/oculometric/HyperFractal" style="display: block; text-align: center;">
+        <button>LINK</button>
+    </a>
 
-            <div class="container">
-                <p>paragraph</p>
-            </div>
-
-            <div class="container" style="border-color: var(--indigo);">
-                <img src="image.jpg" style="display: block; width: 100%">
-            </div>
-        </div>
+    <div class="bordered_box"><br>
+        <p>HyperFractal is an interactive GUI fractal renderer tool written in C++. it allows you to pan/zoom around a selection of well-known fractal equations, input your own custom equations which are parsed at runtime, change the colour scheme and iteration count, and save rendered images and configurations to a database.</p>
     </div>
+
+    <div class="bordered_box"><br>
+        <img src="hyperfractal.jpg" style="display: block; width: 100%">
+        <span class="badge" style="display: block; float:right;">DESCRIPTION</span>
+    </div>
+    <br>
 </body>
 
-<footer style="width: 640px; margin: 0 auto;">
-    <hr style="border-color: var(--indigo);">
-    <a href="../index.html">return to homepage</a>
-    <div style="text-align: right; float: right;"><a href="contact-me.html">contact me</a></div>
-    <p>website developed in pure HTML and CSS by me!</p>
-    <p>fonts used are the <a href="https://befonts.com/adelphe-font-family.html">Adelphe family</a> created by Eugénie Bidaut</p>
-</footer>
+<div w3-include-html="../shared_footer.html"></div> 
+
+<script src="../include_html.js"></script>
+<script>checkHTMLIncludes();</script>

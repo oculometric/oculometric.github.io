@@ -1,39 +1,55 @@
 <!DOCTYPE html>
-
 <head>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="preload" href="../styles.css" as="style"/>
+    <link rel="stylesheet" href="../styles.css"/>
 </head>
 
 <body>
-    <div style="width: 640px; margin: 0 auto">
-        <div style="width: 100%; overflow: hidden">
-            <div class="container">
-                <h1>project - planetarium</h1>
-            </div>
+    <br><br>
+    <header style="justify-content: space-between; align-items: center; background-color: var(--lighterblack);">
+        <span style="background-color: transparent;">
+            <span style="color:var(--carmine);">[</span>
+            cassette - portfolio
+            <span style="color:var(--carmine);">]</span>
+        </span>
+        <span style="float: right;">
+            <span style="color:var(--carmine);">[</span>
+            project - planetarium
+            <span style="color:var(--carmine);">]</span>
+        </span>
+    </header>
+    <br>
 
-            <a href="https://github.com/oculometric/planetarium" style="display: block; text-align: center;">Github repository</a>
-            
-            <br/>
+    <a href="https://github.com/oculometric/planetarium" style="display: block; text-align: center;">
+        <button>Github repository</button>
+    </a>
 
-            <div class="container">
-                <p>planetarium is an ongoing project where i'm teaching myself the Vulkan API. the project idea is to create a Google Earth-style tool (probably also reading data from the Earth Engine API) to visualise both the Earth and the night sky.</p>
-                <br>
-                <p>so far, i've got the GPU initialised, basic 3D model loading, shaders, uniforms, etc, and i'm working on the depth buffer implementation. still a long way to go!</p>
-                <br>
-                <p>one of my goals is for the world to be navigable primarily via controller, which i've implemented fully on Linux but not Windows.</p>
-            </div>
-
-            <div class="container" style="border-color: var(--indigo);">
-                <img src="planetarium.GIF" style="display: block; width: 100%">
-            </div>
-        </div>
+    <div class="bordered_box"><br>
+        <p>planetarium is an ongoing project where i'm teaching myself the Vulkan API. the project idea is to create a Google Earth-style tool (probably also reading data from the Earth Engine API) to visualise both the Earth and the night sky.</p>
+        <br>
+        <p>so far, i've got the GPU initialised, 3D model loading, shaders and uniforms, textures, depth buffering, render-to-texture and post-processing, scene and material description via text files, multiple lights of different types, gizmos, and a bunch more. still a long way to go!</p>
+        <br>
+        <p>one of my goals is for the world to be navigable primarily via controller, which i've implemented fully on Linux but not Windows.</p>
     </div>
+
+    <div class="bordered_box"><br>
+        <img src="planetarium_postprocess.gif" style="display: block; width: 100%">
+        <span class="badge" style="display: block; float:right;">post-process shader showing off access to the different G-buffers</span>
+    </div>
+
+    <div class="bordered_box"><br>
+        <img src="planetarium_newshader.gif" style="display: block; width: 100%">
+        <span class="badge" style="display: block; float:right;">early demo with a simple shader and the classic test meshes</span>
+    </div>
+
+    <div class="bordered_box"><br>
+        <img src="planetarium.GIF" style="display: block; width: 100%">
+        <span class="badge" style="display: block; float:right;">suzanne without the depth buffer implemented</span>
+    </div>
+    <br>
 </body>
 
-<footer style="width: 640px; margin: 0 auto;">
-    <hr style="border-color: var(--indigo);">
-    <a href="../index.html">return to homepage</a>
-    <div style="text-align: right; float: right;"><a href="contact-me.html">contact me</a></div>
-    <p>website developed in pure HTML and CSS by me!</p>
-    <p>fonts used are the <a href="https://befonts.com/adelphe-font-family.html">Adelphe family</a> created by Eugénie Bidaut</p>
-</footer>
+<div w3-include-html="../shared_footer.html"></div> 
+
+<script src="../include_html.js"></script>
+<script>checkHTMLIncludes();</script>

@@ -13,6 +13,7 @@
     --column-width: 768px;
     --line-height: 22px;
     --border-width: 2px;
+    --border-colour: var(--gold);
 }
 
 *
@@ -62,7 +63,7 @@ div.bordered_box:before
     translate: -50% -50%;
     width: calc(100% - 1ch - var(--border-width));
     height: calc(100% - 1lh - var(--border-width));
-    border: solid var(--border-width) var(--gold);
+    border: solid var(--border-width) var(--border-colour);
     z-index: -1;
 }
 

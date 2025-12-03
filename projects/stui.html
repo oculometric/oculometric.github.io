@@ -1,79 +1,79 @@
 <!DOCTYPE html>
-
 <head>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="preload" href="../styles.css" as="style"/>
+    <link rel="stylesheet" href="../styles.css"/>
 </head>
 
 <body>
-    <div style="width: 640px; margin: 0 auto">
-        <div style="width: 100%; overflow: hidden">
-            <div class="container">
-                <h1>project - STUI</h1>
-            </div>
+    <br><br>
+    <header style="justify-content: space-between; align-items: center; background-color: var(--lighterblack);">
+        <span style="background-color: transparent;">
+            <span style="color:var(--carmine);">[</span>
+            cassette - portfolio
+            <span style="color:var(--carmine);">]</span>
+        </span>
+        <span style="float: right;">
+            <span style="color:var(--carmine);">[</span>
+            project - STUI
+            <span style="color:var(--carmine);">]</span>
+        </span>
+    </header>
+    <br>
 
-            <a href="https://github.com/oculometric/stui" style="display: block; text-align: center;">Github repository</a>
-            
-            <br/>
+    <a href="https://github.com/oculometric/stui" style="display: block; text-align: center;">
+        <button>Github repository</button>
+    </a>
 
-            <div class="container">
-                <p>STUI is a Simple, header-only library for building Text UIs for terminal applciations.</p>
-            </div>
-
-            <div class="container" style="border-color: var(--indigo);">
-                <img src="stui/stui_compiler.gif" style="display: block; width: 100%">
-            </div>
-
-            <div class="container">
-                <p>i originally started developing this because i wanted a framework for building my FBX debug tool and showing graphical output in the command line. inspired by <a href="https://github.com/extrawurst/gitui">gitui</a> and its amazing TUI, i went looking for appropriate libraries, but i couldn't find one which was header-only and light-weight enough for my purposes (and written for C++).</p>
-                <br>
-                <p>so i ended up writing this library! it's about 3000 lines long in total and provides a variety of widgets along with a system for displaying them and taking control of the terminal. it supports ANSI terminal colours as well as Unicode special characters.</p>
-            </div>
-
-            <div class="container" style="border-color: var(--indigo);">
-                <img src="stui/stui-1.png" style="display: block; width: 100%">
-            </div>
-
-            <div class="container">
-                <p>you should definitely look at the Github page linked at the top, but here's a brief rundown of the features:</p>
-                <ul>
-                    <li>cross-platform - tested on Linux and Windows (including WSL)</li>
-                    <li>immediate-mode - draw to the screen whenver you want</li>
-                    <li>header-only - just add the header file(s) to your project and you're done</li>
-                    <li>extensible - write your own components if you like</li>
-                    <li>documented - thorough documentation both in source and as a separate tutorial document makes it easy to get started</li>
-                </ul>
-                <br>
-                <p>i wrote this over the course of just two weeks, and learned a ton about how terminal emulators work on both Linux and Windows, and i made use of gprof to profile my code. STUI is capable of rendering at around 3000 frames per second for a complex UI on a mid-spec machine. not that you're likely to have a screen that refreshes that fast.</p>
-            </div>
-
-            <div class="container" style="border-color: var(--indigo);">
-                <img src="stui/stui_widgets.gif" style="display: block; width: 100%">
-            </div>
-
-            <div class="container">
-                <p>as you might have guessed, all of the images here are things i built with STUI to test and demo it. all of these are less than 300 lines of source, most are a lot less.</p>
-            </div>
-
-            <div class="container" style="border-color: var(--indigo); width: 628px; overflow: hidden;">
-                <div style="width: 305px; display: block; float: left;">
-                    <img src="stui/stui-qr.png" style="display: block; width: 100%">
-                </div>
-                <div style="width: 305px; display: block; float: right;">
-                    <img src="stui/stui-qr-out.png" style="display: block; width: 100%;">
-                </div>
-            </div>
-
-            <div class="container" style="border-color: var(--indigo);">
-                <img src="stui/stui-thumb.png" style="display: block; width: 100%">
-            </div>
-        </div>
+    <div class="bordered_box"><br>
+        <p>STUI is a Simple, header-only library for building Text UIs for terminal applciations.</p>
+        <img src="stui/stui_compiler.gif" style="display: block; width: 100%">
+        <hr>
+        <p>i originally started developing this because i wanted a framework for building my FBX debug tool and showing graphical output in the command line. inspired by <a href="https://github.com/extrawurst/gitui">gitui</a> and its amazing TUI, i went looking for appropriate libraries, but i couldn't find one which was header-only and light-weight enough for my purposes (and written for C++).</p>
+        <br>
+        <p>so i ended up writing this library! it's about 3000 lines long in total and provides a variety of widgets along with a system for displaying them and taking control of the terminal. it supports ANSI terminal colours as well as Unicode special characters.</p>
     </div>
+
+    <div class="bordered_box"><br>
+        <img src="stui/stui-1.png" style="display: block; width: 100%">
+        <span class="badge" style="display: block; float:right;">i wrote a TUI for my FBX explorer using STUI</span>
+    </div>
+
+    <div class="bordered_box">
+        <br>
+        <p>you should definitely look at the Github page linked at the top, but here's a brief rundown of the features:</p>
+        <ul>
+            <li>cross-platform - tested on Linux and Windows (including WSL)</li>
+            <li>immediate-mode - draw to the screen whenver you want</li>
+            <li>header-only - just add the header file(s) to your project and you're done</li>
+            <li>extensible - write your own components if you like</li>
+            <li>documented - thorough documentation both in source and as a separate tutorial document makes it easy to get
+                started</li>
+        </ul>
+        <br>
+        <p>i initially wrote this over the course of just two weeks, and learned a ton about how terminal emulators work on both Linux and
+            Windows. i made use of gprof to profile my code. STUI is capable of rendering at around 3000 frames per second
+            for a complex UI on a mid-spec machine. not that you're likely to have a screen that refreshes that fast.</p>
+        <p>pretty much every time i use STUI in another project, i end up adding features, or fixing bugs. i recently added a multi-view element for building tab-based UIs, which required a rewrite of the way component focusing works.</p>
+        <p>additionally, i implemented what i call LayoutScript - a simple syntax tree which can be parsed at runtime into a tree of UI components! this can simplify UI building significantly for big UIs.</p>
+        <img src="stui/stui-script.jpg" style="display: block; width: 100%">
+        <span class="badge" style="display: block; float:right;">LayoutScript being used to describe the compiler demo at the top of this page</span>
+    </div>
+
+    <div class="bordered_box"><br>
+        <img src="stui/stui_widgets.gif" style="display: block; width: 100%">
+        <p>all of the demo projects you can see on this page are less than 300 lines of source for the UI, most are a lot less.</p>
+        <div style="width: 50%; display: block; float: left;">
+            <img src="stui/stui-qr.png" style="display: block; width: 100%">
+        </div>
+        <div style="width: 50%; display: block; float: right;">
+            <img src="stui/stui-qr-out.png" style="display: block; width: 100%;">
+        </div>
+        <img src="stui/stui-thumb.png" style="display: block; width: 100%">
+    </div>
+    <br>
 </body>
 
-<footer style="width: 640px; margin: 0 auto;">
-    <hr style="border-color: var(--indigo);">
-    <a href="../index.html">return to homepage</a>
-    <div style="text-align: right; float: right;"><a href="contact-me.html">contact me</a></div>
-    <p>website developed in pure HTML and CSS by me!</p>
-    <p>fonts used are the <a href="https://befonts.com/adelphe-font-family.html">Adelphe family</a> created by Eugénie Bidaut</p>
-</footer>
+<div w3-include-html="../shared_footer.html"></div> 
+
+<script src="../include_html.js"></script>
+<script>checkHTMLIncludes();</script>

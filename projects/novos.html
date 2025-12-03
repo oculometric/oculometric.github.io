@@ -1,60 +1,61 @@
 <!DOCTYPE html>
-
 <head>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="preload" href="../styles.css" as="style"/>
+    <link rel="stylesheet" href="../styles.css"/>
 </head>
 
 <body>
-    <div style="width: 640px; margin: 0 auto">
-        <div style="width: 100%; overflow: hidden">
-            <div class="container">
-                <h1>project - novos</h1>
-            </div>
+    <br><br>
+    <header style="justify-content: space-between; align-items: center; background-color: var(--lighterblack);">
+        <span style="background-color: transparent;">
+            <span style="color:var(--carmine);">[</span>
+            cassette - portfolio
+            <span style="color:var(--carmine);">]</span>
+        </span>
+        <span style="float: right;">
+            <span style="color:var(--carmine);">[</span>
+            project - novos
+            <span style="color:var(--carmine);">]</span>
+        </span>
+    </header>
+    <br>
 
-            <a href="https://github.com/oculometric/novos" style="display: block; text-align: center;">Github repository</a>
-            
-            <br/>
+    <a href="https://github.com/oculometric/novos" style="display: block; text-align: center;">
+        <button>Github repository</button>
+    </a>
 
-            <div class="container">
-                <p>novos is my ongoing toy operating system project, written in C++ and assembly. my end goal is to turn it into the sort of sci-fi stuff you'd see on the monitor of the computer system in a retro-futuristic spaceship in your average Alien film, or as the main game view in a game like <a href="https://oolite.space">Oolite</a>. so <b>this project is a sort of videogame/art project, but completely bootable</b> with all my own libraries!</p>
-                <br>
-                <p>it's difficult to really show off what i've been doing with this project, since most of the achievements i've made are technical milestones which seem extremely mundane from a perspective of the user-space we're all used to when using computers, but a few of the key milestones i've reached so far:</p>
-                <ol>
-                    <li>from-scratch bootloader, capable of loading into 32-bit mode and unpacking an ELF executable, written in assembly</li>
-                    <li>memory management, dynamic memory allocation (no pages yet)</li>
-                    <li>screen output and structured UI tree</li>
-                    <li>strings, dynamic arrays, linked-lists, and other fundamental data structures</li>
-                    <li>IDT control in C++ land, interrupt handling, interrupt remapping</li>
-                    <li>GDT control/configuration in C++ land</li>
-                    <li>fully functional keyboard driver supporting scan code set 2, interrupt driven</li>
-                    <li>text rendering using a simple custom bitmap font</li>
-                    <li>resource embedding as raw binary data, images and 3D models readable within the OS after boot</li>
-                    <li>full matrix and vector math library, enabling wireframe rendering of 3D models at a reasonable 50fps on a single CPU thread</li>
-                </ol>
-                <p>it's come a long way, but there's still a long way to go. my next move (as of writing this) is implementing timer support using either APIC or PIC, which will enable multithreading, and starting work on file-system parsing to break up the OS from being one big binary file.</p>
-            </div>
-
-            <div class="container" style="border-color: var(--indigo);">
-                <img src="novos-monkey.gif" style="display: block; width: 100%">
-            </div>
-
-            <div class="container" style="border-color: var(--indigo);">
-                <img src="novos-box.gif" style="display: block; width: 100%">
-            </div>
-
-            <div class="container">
-                <p>some graphical demos are above. i love my retro aesthetics and you may notice a certain similarity between the interface design and this website's design...</p>
-                <br>
-                <p>if any of this sounds cool at all, please do check out the Github repository linked above. the code is reasonably well-documented and understandable.</p>
-            </div>
-        </div>
+    <div class="bordered_box"><br>
+        <p>novos is my ongoing toy operating system project, written in C++ and assembly. my end goal is to turn it into the sort of sci-fi stuff you'd see on the monitor of the computer system in a retro-futuristic spaceship in your average Alien film, or as the main game view in a game like <a href="https://oolite.space">Oolite</a>. so <b>this project is a sort of videogame/art project, but completely bootable</b> with all my own libraries!</p>
+        <br>
+        <p>it's difficult to really show off what i've been doing with this project, since most of the achievements i've made are technical milestones which seem extremely mundane from a perspective of the user-space we're all used to when using computers, but a few of the key milestones i've reached so far:</p>
+        <ul>
+            <li>from-scratch bootloader, capable of loading into 32-bit mode and unpacking an ELF executable, written in assembly</li>
+            <li>memory management, dynamic memory allocation (no pages yet)</li>
+            <li>screen output and structured UI tree</li>
+            <li>strings, dynamic arrays, linked-lists, and other fundamental data structures</li>
+            <li>IDT control in C++ land, interrupt handling, interrupt remapping</li>
+            <li>GDT control/configuration in C++ land</li>
+            <li>fully functional keyboard driver supporting scan code set 2, interrupt driven</li>
+            <li>text rendering using a simple custom bitmap font</li>
+            <li>resource embedding as raw binary data, images and 3D models readable within the OS after boot</li>
+            <li>full matrix and vector math library, enabling wireframe rendering of 3D models at a reasonable 50fps on a single CPU thread</li>
+        </ul>
+        <p>it's come a long way, but there's still a long way to go. my next move (as of writing this) is implementing timer support using either APIC or PIC, which will enable multithreading, and starting work on file-system parsing to break up the OS from being one big binary file.</p>
     </div>
+
+    <div class="bordered_box"><br>
+        <img src="novos-monkey.gif" style="display: block; width: 100%">
+        <span class="badge" style="display: block; float:right;">actual 3D rendering, on bare metal</span>
+    </div>
+
+    <div class="bordered_box"><br>
+        <img src="novos-box.gif" style="display: block; width: 100%">
+        <span class="badge" style="display: block; float:right;">early graphics test</span>
+    </div>
+    <br>
 </body>
 
-<footer style="width: 640px; margin: 0 auto;">
-    <hr style="border-color: var(--indigo);">
-    <a href="../index.html">return to homepage</a>
-    <div style="text-align: right; float: right;"><a href="contact-me.html">contact me</a></div>
-    <p>website developed in pure HTML and CSS by me!</p>
-    <p>fonts used are the <a href="https://befonts.com/adelphe-font-family.html">Adelphe family</a> created by Eugénie Bidaut</p>
-</footer>
+<div w3-include-html="../shared_footer.html"></div> 
+
+<script src="../include_html.js"></script>
+<script>checkHTMLIncludes();</script>

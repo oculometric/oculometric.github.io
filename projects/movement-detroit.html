@@ -1,58 +1,54 @@
 <!DOCTYPE html>
-
 <head>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="preload" href="../styles.css" as="style"/>
+    <link rel="stylesheet" href="../styles.css"/>
 </head>
 
 <body>
-    <div style="width: 640px; margin: 0 auto">
-        <div style="width: 100%; overflow: hidden">
-            <div class="container">
-                <h1>project - Movement Detroit Commission</h1>
-            </div>
+    <br><br>
+    <header style="justify-content: space-between; align-items: center; background-color: var(--lighterblack);">
+        <span style="background-color: transparent;">
+            <span style="color:var(--carmine);">[</span>
+            cassette - portfolio
+            <span style="color:var(--carmine);">]</span>
+        </span>
+        <span style="float: right;">
+            <span style="color:var(--carmine);">[</span>
+            project - Movement Detroit commission
+            <span style="color:var(--carmine);">]</span>
+        </span>
+    </header>
+    <br>
 
-            <br/>
-
-            <div class="container">
-                <iframe width="628" height="480" src="https://www.youtube.com/embed/zRSqF18pbqg?si=9EnWvk8JZjhVXYI8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-
-            <div class="container">
-                <p>in July 2023, i was contacted by the publicity team at Movement Detroit, an annual music festival in Detroit, to create a promotional video for the next festival.</p>
-                <br>
-                <p>i worked closely with my contact at Movement Detroit to iterate on and improve the result, incorporating lots of feedback.</p>
-                <br>
-                <p>through the course of the project, i learned Davinci Resolve for editing from scratch, i got to exercise my hard-surface modelling skills, and i had fun creating retro wireframe visuals for various different elements.</p>
-                <p>there were quite a few pieces of 3D work that were cut in the final edit but it was all good practice.</p>
-            </div>
-
-            <div class="container" style="border-color: var(--indigo);">
-                <img src="movement-detroit/movement-detroit-1.jpg" style="display: block; width: 100%">
-            </div>
-
-            <div class="container" style="border-color: var(--indigo);">
-                <img src="movement-detroit/movement-detroit-3.jpg" style="display: block; width: 100%">
-            </div>
-
-            <div class="container">
-                <p>there were quite a few pieces of 3D work that were cut in the final edit but it was all good practice.</p>
-                <br>
-                <p>overall this was a really interesting challenge, not just having to work for a client, but also integrating clips of 3D work with provided clips from the previous festival.</p>
-                <br>
-                <p>a few months after i handed in the final edit, my contact at Movement let me know that they did end up swapping a few of the clips from previous festivals out.</p>
-            </div>
-
-            <div class="container" style="border-color: var(--indigo);">
-                <img src="movement-detroit/movement-detroit-2.jpg" style="display: block; width: 100%">
-            </div>
-        </div>
+    <div class="bordered_box"><br>
+        <iframe width="100%" height="480" src="https://www.youtube.com/embed/zRSqF18pbqg?si=9EnWvk8JZjhVXYI8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <span class="badge" style="display: block; float:right;">the final trailer</span>
     </div>
+
+    <div class="bordered_box"><br>
+        <p>in July 2023, i was contacted by the publicity team at Movement Detroit, an annual music festival in Detroit, to create a promotional video for the next festival.</p>
+        <br>
+        <p>i worked closely with my contact at Movement Detroit to iterate on and improve the result, incorporating lots of feedback.</p>
+        <br>
+        <p>through the course of the project, i learned Davinci Resolve for editing from scratch, i got to exercise my hard-surface modelling skills, and i had fun creating retro wireframe visuals for various different elements.</p>
+        <p>there were quite a few pieces of 3D work that were cut in the final edit but it was all good practice.</p>
+        <img src="movement-detroit/movement-detroit-1.jpg" style="display: block; width: 100%">
+    </div>
+
+    <div class="bordered_box"><br>
+        <img src="movement-detroit/movement-detroit-3.jpg" style="display: block; width: 100%">
+        <p>there were quite a few pieces of 3D work that were cut in the final edit but it was all good practice.</p>
+        <br>
+        <p>overall this was a really interesting challenge, not just having to work for a client, but also integrating clips of 3D work with provided clips from the previous festival.</p>
+        <br>
+        <p>a few months after i handed in the final edit, my contact at Movement let me know that they did end up swapping a few of the clips from previous festivals out.</p>
+        <img src="movement-detroit/movement-detroit-2.jpg" style="display: block; width: 100%">
+        <span class="badge" style="display: block; float:right;">the Movement main stage. i spent far too long modelling this</span>
+    </div>
+    <br>
 </body>
 
-<footer style="width: 640px; margin: 0 auto;">
-    <hr style="border-color: var(--indigo);">
-    <a href="../index.html">return to homepage</a>
-    <div style="text-align: right; float: right;"><a href="contact-me.html">contact me</a></div>
-    <p>website developed in pure HTML and CSS by me!</p>
-    <p>fonts used are the <a href="https://befonts.com/adelphe-font-family.html">Adelphe family</a> created by Eugénie Bidaut</p>
-</footer>
+<div w3-include-html="../shared_footer.html"></div> 
+
+<script src="../include_html.js"></script>
+<script>checkHTMLIncludes();</script>
