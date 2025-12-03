@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+    <link rel="preload" href="../styles.css" as="style"/>
+    <link rel="stylesheet" href="../styles.css"/>
+</head>
+
+<body>
+    <br><br>
+    <header style="justify-content: space-between; align-items: center; background-color: var(--lighterblack);">
+        <span style="background-color: transparent;">
+            <span style="color:var(--carmine);">[</span>
+            cassette - portfolio
+            <span style="color:var(--carmine);">]</span>
+        </span>
+        <span style="float: right;">
+            <span style="color:var(--carmine);">[</span>
+            project - framework-renderer
+            <span style="color:var(--carmine);">]</span>
+        </span>
+    </header>
+    <br>
+
+    <a href="https://github.com/oculometric/framework-renderer" style="display: block; text-align: center;">
+        <button>Github repository</button>
+    </a>
+
+    <div class="bordered_box"><br>
+        <p>this is a DirectX 11-powered rendering engine built in C++. i developed this for the realtime graphics module in my second year at Uni. i then built on it in the physics simulation module after that, extending it to include a simple physics engine too. i'll only focus on the graphics element here.</p>
+        <img src="framework-renderer-full.jpg" style="display: block; width: 100%">
+        <span class="badge" style="display: block; float:right;">demo scene</span>
+    </div>
+
+    <div class="bordered_box"><br>
+        <p>i really went above and beyond to implement a few interesting rendering techniques with this project. as well as the basic stuff of mesh rendering, point/spot/directional lights, here's a summary of some of the more interesting techniques:</p>
+        <ul>
+            <li>masked transparency</li>
+            <li>PBR uber-shader with roughness and metallic inputs</li>
+            <li>post-processing and G-buffer access</li>
+            <li>SSAO</li>
+            <li>shadow mapping</li>
+            <li>normal maps</li>
+        </ul>
+        <p>i also implemented an object/transform heirarchy, resource management system, and JSON scene deserialisation.</p>
+        <br>
+        <p>i made sure to implement a few useful small things as well, such as window resizing, sorting of objects according to mesh and shader (to reduce context switches), and a debug view mode with axes and bounding boxes.</p>
+        <img src="framework-renderer-gizmos.jpg" style="display: block; width: 100%">
+        <img src="framework-renderer-gizmos.gif" style="display: block; width: 100%">
+        <span class="badge" style="display: block; float:right;">gizmos in debug mode</span>
+    </div>
+
+    <div class="bordered_box"><br>
+        <p>i made the demo scene in Blender (as usual) then brought the result over as individual models, textures, and materials, and reconstructed it in the engine. it's vaguely inspired by the surreal artworks of de Chirico.</p>
+        <br>
+        <p>the post-processing shader has a uniform which allows it to be configured to several different modes - stylised post-process; colour buffer only; normal buffer; depth buffer; sharpen; SSAO.</p>
+        <p>the stylised mode features SSAO, sharpen, depth fog, and an ASCII shader overlay. it also adds a skybox background.</p>
+        <video width="100%" height="400" controls>
+            <source src="framework-renderer-walkthrough.mp4" type="video/mp4">
+        </video>
+        <span class="badge" style="display: block; float:right;">walkthrough demo video</span>
+    </div>
+
+    <div class="bordered_box"><br>
+        <p>the shadow mapping works by performing a depth-only render of the objects in the scene, from the perspective of each light. these textures are then bound by the object shaders in the main pass, and for each light, the world position of the pixel will be compared to the reprojected depth buffer value from the shadow texture, and the pixel will be lit or shaded accordingly.</p>
+        <p>this is a very simple, cheap technique, but has limited resolution (often resulting in blocky shadows) and limited area of coverage for directional/sun lights.</p>
+        <br>
+        <p>one thing i found quite challenging with this project was normal mapping. this involved extending my mesh loader to calculate tangents and bitangents, which was quite hard, on top of correctly bending normals in the shader based on the normal map.</p>
+        <br>
+        <p>i'm quite pleased with my SSAO implementation. it's quite a cheap shader, and a very useful/common effect to have. my implementation doesn't have any anti-aliasing, which could definitely be improved. i could also play with the random direction function to alter the dithering pattern to improve it.</p>
+        <img src="framework-renderer-ao.jpg" style="display: block; width: 100%">
+        <br>
+        <p>one thing i didn't implement fully was frustrum culling. i just never got this working correctly with all the possible cases of object AABBs intersecting the camera frustrum.</p>
+        <br>
+        <p>it was quite fun learning DX11, and definitely simpler than Vulkan, which allowed me to focus on the actual graphics techniques more than just using the API.</p>
+    </div>
+    <br>
+</body>
+
+<div w3-include-html="../shared_footer.html"></div> 
+
+<script src="../include_html.js"></script>
+<script>checkHTMLIncludes();</script>
