@@ -24,7 +24,7 @@ jobs:
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
       with:
-        branch: main
+        branch: sitemap
         title: "Automated sitemap update"
         body: > 
           Sitemap updated by the [generate-sitemap](https://github.com/cicirello/generate-sitemap) 
