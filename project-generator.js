@@ -1,5 +1,13 @@
 var projects = 
 [
+    [ "Dissertation - Marching Tetrahedra", 
+        "Sep 2025 - Mar 2026", 
+        "my university final year dissertation project. i examined the Regularised Marching Tetrahedra algorithm in service of procedural geometry generation for videogames.", 
+        "projects/dissertation.html", 
+        "projects/dissertation/thumb.jpg",
+        [ "C++", "graphics", "tech-art" ],
+        [ "tech art", "graphics", "programming" ],
+        "https://github.com/oculometric/marching-tetrahedra-fyp", "Github" ],
     [ "Asha", 
         "Sep - Nov 2025", 
         "a low-poly pixel-art character project, based on an NPC from ZZZ.", 

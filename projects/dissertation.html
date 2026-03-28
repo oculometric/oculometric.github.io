@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+    <link rel="preload" href="../styles.css" as="style"/>
+    <link rel="stylesheet" href="../styles.css"/>
+</head>
+
+<title>cassette - dissertation</title>
+<meta content="cassette - dissertation" property="og:title"/>
+<meta content="https://oculometric.github.io/projects/dissertation.html" property="og:url"/>
+<meta content="https://oculometric.github.io/projects/dissertation/thumb.jpg" property="og:image"/>
+<meta content="#F2A11A" data-react-helmet="true" name="theme-color"/>
+
+<body>
+    <br><br>
+    <header style="justify-content: space-between; align-items: center; background-color: var(--lighterblack);">
+        <span style="background-color: transparent;">
+            <span style="color:var(--carmine);">[</span>
+            cassette - portfolio
+            <span style="color:var(--carmine);">]</span>
+        </span>
+        <span style="float: right;">
+            <span style="color:var(--carmine);">[</span>
+            project - dissertation
+            <span style="color:var(--carmine);">]</span>
+        </span>
+    </header>
+    <br>
+
+    <a href="https://github.com/oculometric/marching-tetrahedra-fyp" style="display: block; text-align: center;">
+        <button>Github repository</button>
+    </a>
+
+    <div class="bordered_box"><br>
+        <p>for my final year project at Staffs, i researched isosurface extraction for videogame terrain generation. in particular, i was interested in generating non-heightmap terrain, like an asteroid!</p>
+        <img src="dissertation/af_bi.gif" style="display: block; width: 100%">
+        <br>
+        <p>for the project, i did a whole lot of literature reviewing, implemented the Regularised Marching Tetrahedra algorithm presented by Treece, Prager, and Gee (1999) with some adaptations, and then tested some variations on the algorithm via benchmarks and a questionnaire to evaluate how the variations performed in terms of triangle count, regularity, performance, and visual quality.</p>
+        <br>
+        <p>i also completed a viva at the end of the project for my supervisor. thank you Kieran Osborne for your fantastic mentorship as my supervisor throughout the project, i really appreciated it.</p>
+    </div>
+
+    <div class="bordered_box"><br>
+        <p>the principle of isosurface extraction is that, given a scalar function (e.g. f(x,y,z) = x^2 + y^2 + z^2) and a threshold value (e.g. f(x,y,z) = 1), a surface can be constructed which divides the regions where the scalar function is greater or less than the threshold. the extraction part is then just turning that theoretical surface into a triangle mesh.</p>
+        <br>
+        <p>however, for videogame meshes, there are a few specific requirements to consider:</p>
+        <ul>
+            <li>minimal triangle count, for rendering/storage performance</li>
+            <li>time/memory cost of computation</li>
+            <li>reliably watertight meshes with correct topology (holes or non-manifold mesh features are not allowed)</li>
+            <li>good shading quality - mostly depending on regular, even triangles</li>
+        </ul>
+        <p>with those requirements in mind, i evaluated some different ways of tesselating 3D space with tetrahedra, and some different methods for regularising the mesh (i.e. cleaning up tiny or elongated triangles).</p>
+        <br>
+        <p>if you're interested to learn more, i highly recommend you read my dissertation paper!</p>
+        <a href="dissertation/dissertation.pdf" style="display: block; text-align: center;">
+            <button>Download the PDF</button>
+        </a>
+        <img src="dissertation/preview.jpg" style="display: block; width: 100%">
+        <span class="badge" style="display: block; float:right;">front cover of my dissertation. i'm super proud of it!</span>
+    </div>
+
+    <div class="bordered_box"><br>
+        <p>in addition to implementing the algorithm itself, i built an OpenGL-powered visualisation environment where you can play with the settings for the algorithm in realtime.</p>
+        <a href="https://github.com/oculometric/marching-tetrahedra-fyp/releases/tag/v1.1" style="display: block; text-align: center;">
+            <button>Download the application</button>
+        </a>
+        <img src="dissertation/gui.jpg" style="display: block; width: 100%">
+        <br>
+        <p>i really just want to show off some of the results, and diagrams from the project, so enjoy below.</p>
+        <img src="dissertation/bs_biw.gif" style="display: block; width: 100%">
+        <img src="dissertation/ss_biw.gif" style="display: block; width: 100%">
+        <br>
+        <p>all of these were taken directly from the paper itself. go read it!</p>
+        <img src="dissertation/bunnies.jpg" style="display: block; width: 100%">
+        <img src="dissertation/spheres.jpg" style="display: block; width: 100%">
+        <img src="dissertation/asteroids.jpg" style="display: block; width: 100%">
+        <br>
+        <p>here are some of the diagrams i made for the paper, mostly using Inkscape.</p>
+        <img src="dissertation/tetrahedra.jpg" style="display: block; width: 100%">
+        <img src="dissertation/transformation.jpg" style="display: block; width: 100%">
+        <br>
+        <p>finally, one of the key results - a huge 75%+ reduction in triangle count for my test models!</p>
+        <img src="dissertation/triangles.jpg" style="display: block; width: 100%">
+        <br>
+        <p>anyway basically go read the paper and try out the interactive demo application!</p>
+    </div>
+
+    <div class="bordered_box"><br>
+        <img src="dissertation/hands.gif" style="display:block; margin-left: auto; margin-right: auto; width: 50%;">
+        <br>
+        <span class="badge" style="display: block; float:right;">girl who uses her hands too much when explaining things</span>
+    </div>
+    <br>
+</body>
+
+<div w3-include-html="../shared_footer.html"></div> 
+
+<script src="../include_html.js"></script>
+<script>checkHTMLIncludes();</script>
