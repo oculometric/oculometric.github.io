@@ -12,6 +12,7 @@
     --indigo: #642e96;
     --column-width: 768px;
     --line-height: 22px;
+    --char-width: 8px;
     --border-width: 2px;
     --border-colour: var(--gold);
 }
@@ -22,6 +23,8 @@
     font-family: CASS_BITMAP;
     line-height: var(--line-height);
     -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -44,7 +47,7 @@ div
 
 div.bordered_box
 {
-    margin-bottom: 1lh;
+    margin-bottom: 0lh;
     padding-top: 0;
     padding-left: 1ch;
     padding-right: 1ch;
