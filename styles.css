@@ -19,7 +19,7 @@
 
 *
 {
-    font-size: 16px;
+    font-size: 16px !important;
     font-family: CASS_BITMAP;
     line-height: var(--line-height);
     -webkit-text-size-adjust: 100%;
