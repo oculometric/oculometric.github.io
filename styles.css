@@ -17,7 +17,7 @@
     --border-colour: var(--gold);
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 768px) {
     :root
     {
         --column-width: 640px;
