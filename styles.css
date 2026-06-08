@@ -10,11 +10,18 @@
     --gold: #ff9900;
     --carmine: #cf2e1d;
     --indigo: #642e96;
-    --column-width: 384px;
+    --column-width: 768px;
     --line-height: 22px;
     --char-width: 8px;
     --border-width: 2px;
     --border-colour: var(--gold);
+}
+
+@media all and (max-width: 1024px) {
+    :root
+    {
+        --column-width: 640px;
+    }
 }
 
 *
