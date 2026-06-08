@@ -146,9 +146,10 @@ a
 a.menu_link
 {
     float: right;
-    margin-left: 2ch;
-    margin-right: 2ch;
-    width: calc(100% - 4ch);
+    margin-left: 1ch;
+    margin-right: 1ch;
+    width: calc(100% - 2ch);
+    white-space: break-spaces;
     background-color: transparent;
 }
 
