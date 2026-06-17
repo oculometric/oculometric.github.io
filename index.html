@@ -12,6 +12,10 @@
     <!-- page url-->
     <link rel="canonical" href="https://cassette.graphics" />
     <meta name="og:url" content="https://cassette.graphics" />
+    <script>
+        if (!(location.hostname === "localhost" || location.hostname === "127.0.0.1"))
+            history.replaceState("", "", "/");
+    </script>
 
     <!-- page description -->
     <meta name="og:description" content="personal portfolio of cassette costen." />
