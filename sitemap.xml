@@ -8,70 +8,111 @@
 
 
 <url>
-  <loc>https://cassette.graphics/</loc>
-  <lastmod>2026-02-04T18:33:09+00:00</lastmod>
+  <loc>https://cassette.graphics/index.html</loc>
   <priority>1.00</priority>
 </url>
+
 <url>
   <loc>https://cassette.graphics/about-me.html</loc>
-  <lastmod>2026-02-04T18:33:08+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>https://cassette.graphics/my-employment.html</loc>
-  <lastmod>2026-02-04T18:33:09+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>https://cassette.graphics/my-education.html</loc>
-  <lastmod>2026-02-04T18:33:08+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>https://cassette.graphics/projects.html</loc>
-  <lastmod>2026-02-04T18:33:09+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>https://cassette.graphics/contact-me.html</loc>
-  <lastmod>2026-02-04T18:33:09+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.90</priority>
 </url>
+
 <url>
-  <loc>https://cassette.graphics/projects/framework-renderer.html</loc>
-  <lastmod>2026-02-04T18:33:08+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://cassette.graphics/projects/origami-sunset.html</loc>
+  <priority>0.85</priority>
 </url>
 <url>
   <loc>https://cassette.graphics/projects/asha.html</loc>
-  <lastmod>2026-02-04T18:33:09+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.85</priority>
 </url>
 <url>
   <loc>https://cassette.graphics/projects/rod-and-ripple.html</loc>
-  <lastmod>2026-02-04T18:33:09+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.85</priority>
 </url>
 <url>
-  <loc>https://cassette.graphics/projects/origami-sunset.html</loc>
-  <lastmod>2026-02-04T18:33:09+00:00</lastmod>
+  <loc>https://cassette.graphics/projects/greenhouse.html</loc>
+  <priority>0.85</priority>
+</url>
+<url>
+  <loc>https://cassette.graphics/projects/bunny.html</loc>
+  <priority>0.85</priority>
+</url>
+<url>
+  <loc>https://cassette.graphics/projects/dissertation.html</loc>
+  <priority>0.85</priority>
+</url>
+<url>
+  <loc>https://cassette.graphics/projects/gallery-study.html</loc>
+  <priority>0.85</priority>
+</url>
+
+<url>
+  <loc>https://cassette.graphics/projects/framework-renderer.html</loc>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://cassette.graphics/projects/stui.html</loc>
-  <lastmod>2026-02-04T18:33:08+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://cassette.graphics/projects/hyperfractal.html</loc>
-  <lastmod>2026-02-04T18:33:08+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://cassette.graphics/projects/movement-detroit.html</loc>
-  <lastmod>2026-02-04T18:33:08+00:00</lastmod>
-  <priority>0.64</priority>
+  <priority>0.80</priority>
 </url>
-
+<url>
+  <loc>https://cassette.graphics/projects/untitled-stairway.html</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cassette.graphics/projects/tate-modern-britain.html</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cassette.graphics/projects/spider.html</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cassette.graphics/projects/planetarium.html</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cassette.graphics/projects/pipe-grotto.html</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cassette.graphics/projects/novos.html</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cassette.graphics/projects/gp-space.html</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cassette.graphics/projects/connect.html</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cassette.graphics/projects/camcorder.html</loc>
+  <priority>0.80</priority>
+</url>
 
 </urlset>
