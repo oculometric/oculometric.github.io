@@ -1,27 +1,38 @@
 <!DOCTYPE html>
+
 <head>
-    <link rel="preload" href="styles.css" as="style"/>
-    <link rel="stylesheet" href="styles.css"/>
+    <!-- mandatory stylesheet preload (DO NOT CHANGE) -->
+    <link rel="preload" href="styles.css" as="style" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- page title -->
+    <title>cassette - error</title>
+    <meta name="og:title" content="cassette - error" />
+
+    <!-- page url-->
+    <link rel="canonical" href="https://cassette.graphics/404" />
+    <meta name="og:url" content="https://cassette.graphics/404" />
+    <script>
+        if (!(location.hostname === "localhost" || location.hostname === "127.0.0.1"))
+            history.replaceState("", "", "/404");
+    </script>
+
+    <!-- page description -->
+    <meta name="og:description" content="404 error." />
+    <meta name="description" content="404 error." />
+
+    <!-- page embed image -->
+    <meta name="og:image" content="https://cassette.graphics/projects/asha/asha.jpg" />
+    <meta name="twitter:card" content="https://cassette.graphics/projects/asha/asha.jpg" />
+
+    <!-- other metadata (DO NOT CHANGE) -->
+    <meta name="theme-color" content="#FF9900" data-react-helmet="true" />
+    <meta name="keywords" content="Art, Technical Art, Programming, C++, Graphics, Rendering, Digital Art"/>
+    <meta name="author" content="Casstte Costen" />
 </head>
 
-<title>cassette - error!</title>
-
-
 <body>
-    <br><br>
-    <header style="justify-content: space-between; align-items: center; background-color: var(--lighterblack);">
-        <span style="background-color: transparent;">
-            <span style="color:var(--carmine);">[</span>
-            cassette - portfolio
-            <span style="color:var(--carmine);">]</span>
-        </span>
-        <span style="float: right;">
-            <span style="color:var(--carmine);">[</span>
-            0xCA55E77E
-            <span style="color:var(--carmine);">]</span>
-        </span>
-    </header>
-    <br>
+    <script src="autoheader.js"></script>
 
     <div>
         <div class="bordered_box">

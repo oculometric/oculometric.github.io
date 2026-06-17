@@ -1,29 +1,38 @@
 <!DOCTYPE html>
+
 <head>
-    <link rel="preload" href="styles.css" as="style"/>
-    <link rel="stylesheet" href="styles.css"/>
+    <!-- mandatory stylesheet preload (DO NOT CHANGE) -->
+    <link rel="preload" href="styles.css" as="style" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- page title -->
+    <title>cassette - projects</title>
+    <meta name="og:title" content="cassette - employment" />
+
+    <!-- page url-->
+    <link rel="canonical" href="https://cassette.graphics/my-employment" />
+    <meta name="og:url" content="https://cassette.graphics/my-employment" />
+    <script>
+        if (!(location.hostname === "localhost" || location.hostname === "127.0.0.1"))
+            history.replaceState("", "", "/my-employment");
+    </script>
+
+    <!-- page description -->
+    <meta name="og:description" content="cassette costen's employment history." />
+    <meta name="description" content="cassette costen's employment history." />
+
+    <!-- page embed image -->
+    <meta name="og:image" content="http://cassette.graphics/projects/asha/asha.jpg" />
+    <meta name="twitter:card" content="http://cassette.graphics/projects/asha/asha.jpg" />
+
+    <!-- other metadata (DO NOT CHANGE) -->
+    <meta name="theme-color" content="#FF9900" data-react-helmet="true" />
+    <meta name="keywords" content="Art, Technical Art, Programming, C++, Graphics, Rendering, Digital Art"/>
+    <meta name="author" content="Casstte Costen" />
 </head>
 
-<title>cassette - employment</title>
-<meta content="cassette - employment" property="og:title"/>
-<meta content="https://cassette.graphics/my-employment.html" property="og:url"/>
-<meta content="#F2A11A" data-react-helmet="true" name="theme-color"/>
-
-<body>
-    <br><br>
-    <header style="justify-content: space-between; align-items: center; background-color: var(--lighterblack);">
-        <span style="background-color: transparent;">
-            <span style="color:var(--carmine);">[</span>
-            cassette - portfolio
-            <span style="color:var(--carmine);">]</span>
-        </span>
-        <span style="float: right;">
-            <span style="color:var(--carmine);">[</span>
-            employment
-            <span style="color:var(--carmine);">]</span>
-        </span>
-    </header>
-    <br>
+<body title="employment">
+    <script src="autoheader.js"></script>
 
     <p style="text-align: center;">this page is ordered recent-first.</p>
 
@@ -62,9 +71,5 @@
             <a href="projects/movement-detroit.html" class="menu_link"><button>more info</button></a>
         </div>
     </div>
+    <script src="autofooter.js"></script>
 </body>
-
-<div w3-include-html="shared_footer.html"></div> 
-
-<script src="include_html.js"></script>
-<script>checkHTMLIncludes();</script>
