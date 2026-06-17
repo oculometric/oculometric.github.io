@@ -1,30 +1,38 @@
 <!DOCTYPE html>
+
 <head>
-    <link rel="preload" href="../styles.css" as="style"/>
-    <link rel="stylesheet" href="../styles.css"/>
+    <!-- mandatory stylesheet preload (DO NOT CHANGE) -->
+    <link rel="preload" href="/styles.css" as="style" />
+    <link rel="stylesheet" href="/styles.css" />
+
+    <!-- page title -->
+    <title>cassette - mechanical spider</title>
+    <meta name="og:title" content="cassette - mechanical spider" />
+
+    <!-- page url-->
+    <link rel="canonical" href="https://cassette.graphics/projects/spider" />
+    <meta name="og:url" content="https://cassette.graphics/projects/spider" />
+    <script>
+        if (!(location.hostname === "localhost" || location.hostname === "127.0.0.1"))
+            history.replaceState("", "", "/projects/spider");
+    </script>
+
+    <!-- page description -->
+    <meta name="og:description" content="a study in hard-surface modelling, rigging, and animation." />
+    <meta name="description" content="a study in hard-surface modelling, rigging, and animation." />
+
+    <!-- page embed image -->
+    <meta name="og:image" content="https://cassette.graphics/projects/spider-2.gif" />
+    <meta name="twitter:card" content="https://cassette.graphics/projects/spider-2.gif" />
+
+    <!-- other metadata (DO NOT CHANGE) -->
+    <meta name="theme-color" content="#FF9900" data-react-helmet="true" />
+    <meta name="keywords" content="Art, Technical Art, Programming, C++, Graphics, Rendering, Digital Art"/>
+    <meta name="author" content="Casstte Costen" />
 </head>
 
-<title>cassette - mechanical spider</title>
-<meta content="cassette - mechanical spider" property="og:title"/>
-<meta content="https://cassette.graphics/projects/spider.html" property="og:url"/>
-<meta content="https://cassette.graphics/projects/spider-2.gif" property="og:image"/>
-<meta content="#F2A11A" data-react-helmet="true" name="theme-color"/>
-
-<body>
-    <br><br>
-    <header style="justify-content: space-between; align-items: center; background-color: var(--lighterblack);">
-        <span style="background-color: transparent;">
-            <span style="color:var(--carmine);">[</span>
-            cassette - portfolio
-            <span style="color:var(--carmine);">]</span>
-        </span>
-        <span style="float: right;">
-            <span style="color:var(--carmine);">[</span>
-            project - mechanical spider
-            <span style="color:var(--carmine);">]</span>
-        </span>
-    </header>
-    <br>
+<body title="mechanical spider">
+    <script src="/autoheader.js"></script>
 
     <a href="https://oculometric.artstation.com/projects/dK0J91" style="display: block; text-align: center;">
         <button>Artstation project</button>
@@ -46,10 +54,5 @@
         <img src="spider-3.png" style="display: block; width: 100%">
         <span class="badge" style="display: block; float:right;">wireframe view</span>
     </div>
-    <br>
+    <script src="/autofooter.js"></script>
 </body>
-
-<div w3-include-html="../shared_footer.html"></div> 
-
-<script src="../include_html.js"></script>
-<script>checkHTMLIncludes();</script>

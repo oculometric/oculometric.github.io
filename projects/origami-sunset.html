@@ -1,30 +1,38 @@
 <!DOCTYPE html>
+
 <head>
-    <link rel="preload" href="../styles.css" as="style"/>
-    <link rel="stylesheet" href="../styles.css"/>
+    <!-- mandatory stylesheet preload (DO NOT CHANGE) -->
+    <link rel="preload" href="/styles.css" as="style" />
+    <link rel="stylesheet" href="/styles.css" />
+
+    <!-- page title -->
+    <title>cassette - origami-sunset</title>
+    <meta name="og:title" content="cassette - origami-sunset" />
+
+    <!-- page url-->
+    <link rel="canonical" href="https://cassette.graphics/projects/origami-sunset" />
+    <meta name="og:url" content="https://cassette.graphics/projects/origami-sunset" />
+    <script>
+        if (!(location.hostname === "localhost" || location.hostname === "127.0.0.1"))
+            history.replaceState("", "", "/projects/PROJECTPAGE");
+    </script>
+
+    <!-- page description -->
+    <meta name="og:description" content="a night-sky map tool written in C++." />
+    <meta name="description" content="a night-sky map tool written in C++." />
+
+    <!-- page embed image -->
+    <meta name="og:image" content="https://cassette.graphics/projects/origami-sunset.jpg" />
+    <meta name="twitter:card" content="https://cassette.graphics/projects/origami-sunset.jpg" />
+
+    <!-- other metadata (DO NOT CHANGE) -->
+    <meta name="theme-color" content="#FF9900" data-react-helmet="true" />
+    <meta name="keywords" content="Art, Technical Art, Programming, C++, Graphics, Rendering, Digital Art"/>
+    <meta name="author" content="Casstte Costen" />
 </head>
 
-<title>cassette - origami-sunset</title>
-<meta content="cassette - origami-sunset" property="og:title"/>
-<meta content="https://cassette.graphics/projects/origami-sunset.html" property="og:url"/>
-<meta content="https://cassette.graphics/projects/origami-sunset.jpg" property="og:image"/>
-<meta content="#F2A11A" data-react-helmet="true" name="theme-color"/>
-
-<body>
-    <br><br>
-    <header style="justify-content: space-between; align-items: center; background-color: var(--lighterblack);">
-        <span style="background-color: transparent;">
-            <span style="color:var(--carmine);">[</span>
-            cassette - portfolio
-            <span style="color:var(--carmine);">]</span>
-        </span>
-        <span style="float: right;">
-            <span style="color:var(--carmine);">[</span>
-            project - origami-sunset
-            <span style="color:var(--carmine);">]</span>
-        </span>
-    </header>
-    <br>
+<body title="origami-sunset">
+    <script src="/autoheader.js"></script>
 
     <a href="https://github.com/oculometric/origami-sunset" style="display: block; text-align: center;">
         <button>Github repository</button>
@@ -57,10 +65,5 @@
         <br>
         <p>i also plan to implement tracking of the planets, sun, and moon, which will depend on being able to configure the current time, latitude, and longitude, and perform an additional transformation to correct for this.</p>
     </div>
-    <br>
+    <script src="/autofooter.js"></script>
 </body>
-
-<div w3-include-html="../shared_footer.html"></div> 
-
-<script src="../include_html.js"></script>
-<script>checkHTMLIncludes();</script>

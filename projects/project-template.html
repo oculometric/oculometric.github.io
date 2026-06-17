@@ -1,46 +1,50 @@
 <!DOCTYPE html>
+
 <head>
-    <link rel="preload" href="../styles.css" as="style"/>
-    <link rel="stylesheet" href="../styles.css"/>
+    <!-- mandatory stylesheet preload (DO NOT CHANGE) -->
+    <link rel="preload" href="/styles.css" as="style" />
+    <link rel="stylesheet" href="/styles.css" />
+
+    <!-- page title -->
+    <title>cassette - TITLE</title>
+    <meta name="og:title" content="cassette - TITLE" />
+
+    <!-- page url-->
+    <link rel="canonical" href="https://cassette.graphics/projects/PROJECTPAGE" />
+    <meta name="og:url" content="https://cassette.graphics/projects/PROJECTPAGE" />
+    <script>
+        if (!(location.hostname === "localhost" || location.hostname === "127.0.0.1"))
+            history.replaceState("", "", "/projects/PROJECTPAGE");
+    </script>
+
+    <!-- page description -->
+    <meta name="og:description" content="DESCRIPTION." />
+    <meta name="description" content="DESCRIPTION." />
+
+    <!-- page embed image -->
+    <meta name="og:image" content="https://cassette.graphics/IMAGE" />
+    <meta name="twitter:card" content="https://cassette.graphics/IMAGE" />
+
+    <!-- other metadata (DO NOT CHANGE) -->
+    <meta name="theme-color" content="#FF9900" data-react-helmet="true" />
+    <meta name="keywords" content="Art, Technical Art, Programming, C++, Graphics, Rendering, Digital Art"/>
+    <meta name="author" content="Casstte Costen" />
 </head>
 
-<title>cassette - template</title>
-<meta content="cassette - template" property="og:title"/>
-<meta content="https://cassette.graphics/projects/project-template.html" property="og:url"/>
-<meta content="#F2A11A" data-react-helmet="true" name="theme-color"/>
+<body title="TITLE">
+    <script src="/autoheader.js"></script>
 
-<body>
-    <br><br>
-    <header style="justify-content: space-between; align-items: center; background-color: var(--lighterblack);">
-        <span style="background-color: transparent;">
-            <span style="color:var(--carmine);">[</span>
-            cassette - portfolio
-            <span style="color:var(--carmine);">]</span>
-        </span>
-        <span style="float: right;">
-            <span style="color:var(--carmine);">[</span>
-            project - NAME
-            <span style="color:var(--carmine);">]</span>
-        </span>
-    </header>
-    <br>
-
-    <a href="https://github.com/oculometric/HyperFractal" style="display: block; text-align: center;">
+    <a href="LINK" style="display: block; text-align: center;">
         <button>LINK</button>
     </a>
 
     <div class="bordered_box"><br>
-        <p>HyperFractal is an interactive GUI fractal renderer tool written in C++. it allows you to pan/zoom around a selection of well-known fractal equations, input your own custom equations which are parsed at runtime, change the colour scheme and iteration count, and save rendered images and configurations to a database.</p>
+        <p>PARAGRAPH</p>
     </div>
 
     <div class="bordered_box"><br>
-        <img src="hyperfractal.jpg" style="display: block; width: 100%">
+        <img src="IMAGE" style="display: block; width: 100%">
         <span class="badge" style="display: block; float:right;">DESCRIPTION</span>
     </div>
-    <br>
+    <script src="/autofooter.js"></script>
 </body>
-
-<div w3-include-html="../shared_footer.html"></div> 
-
-<script src="../include_html.js"></script>
-<script>checkHTMLIncludes();</script>

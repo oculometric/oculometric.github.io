@@ -1,5 +1,5 @@
 function generateFooter() {
-    document.getElementsByTagName("body")[0].innerHTML += "<footer style=\"max-width: var(--column-width); margin:auto;\">\
+    document.getElementsByTagName("body")[0].innerHTML += "<br><footer style=\"max-width: var(--column-width); margin:auto;\">\
     <hr>\
     <header style=\"justify-content: space-between; align-items: center; background-color: var(--lighterblack);\">\
         <a href=\"/index.html\" style=\"padding-left: 2ch;\">\
