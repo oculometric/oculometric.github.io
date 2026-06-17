@@ -23,5 +23,39 @@ function checkHTMLIncludes() {
       /* Exit the function: */
       return;
     }
+
+    // var meta = elmnt.getAttribute("cass-generate-meta");
+    // if (meta) {
+    //   var image = elmnt.getAttribute("image");
+    //   if (image) {
+    //     elmnt.removeAttribute("image");
+    //   }
+    //   else {
+    //     image = "https://cassette.graphics/projects/asha/asha.jpg";
+    //   }
+    //   var description = elmnt.getAttribute("description");
+    //   if (description) {
+    //     elmnt.removeAttribute("description");
+    //   }
+
+    //   const url = new URL(document.URL);
+    //   const rel = url.toString().substring(url.origin.length);
+    //   const path = url.pathname;
+    //   const canonical = "https://cassette.graphics" + path;
+
+    //   // construct new html
+    //   elmnt.innerHTML = elmnt.innerHTML +
+    //     "<title>cassette - " + meta + "</title>\
+    // <meta name=\"theme-color\" content=\"#FF9900\" data-react-helmet=\"true\" />\
+    // <meta name=\"og:title\" content=\"cassette - " + meta + "\" />\
+    // <meta name=\"og:url\" content=\"" + canonical + "\" />\
+    // <meta name=\"og:description\" content=\"" + description + "\" />\
+    // <meta name=\"description\" content=\"" + description + "\" />\
+    // <meta name=\"keywords\" content=\"Art, Technical Art, Programming, C++, Graphics, Rendering, Digital Art\"/>\
+    // <meta name=\"author\" content=\"Casstte Costen\" />\
+    // <meta name=\"og:image\" content=\"" + image + "\" />\
+    // <meta name=\"twitter:card\" content=\"" + image + "\" />";
+    //   elmnt.removeAttribute("cass-generate-meta");
+    // }
   }
 }

@@ -1,37 +1,34 @@
 <!DOCTYPE html>
 
 <head>
-    <title>cassette - portfolio</title>
+    <!-- mandatory stylesheet preload (DO NOT CHANGE) -->
     <link rel="preload" href="styles.css" as="style" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="canonical" href="https://cassette.graphics/" />
 
-    <meta name="theme-color" content="#FF9900" data-react-helmet="true" />
+    <!-- page title -->
+    <title>cassette - portfolio</title>
     <meta name="og:title" content="cassette - portfolio" />
+
+    <!-- page url-->
+    <link rel="canonical" href="https://cassette.graphics" />
     <meta name="og:url" content="https://cassette.graphics" />
+
+    <!-- page description -->
     <meta name="og:description" content="personal portfolio of cassette costen." />
     <meta name="description" content="personal portfolio of cassette costen." />
+
+    <!-- page embed image -->
+    <meta name="og:image" content="https://cassette.graphics/projects/asha/asha.jpg" />
+    <meta name="twitter:card" content="https://cassette.graphics/projects/asha/asha.jpg" />
+
+    <!-- other metadata (DO NOT CHANGE) -->
+    <meta name="theme-color" content="#FF9900" data-react-helmet="true" />
     <meta name="keywords" content="Art, Technical Art, Programming, C++, Graphics, Rendering, Digital Art"/>
     <meta name="author" content="Casstte Costen" />
-    <meta name="og:image" content="https://cassette.graphics/projects/asha/asha.jpg" />
-    <meta name="twitter:card" content="https://cassette.graphics/asha/asha.jpg" />
 </head>
 
 <body>
-    <br><br>
-    <header style="justify-content: space-between; align-items: center; background-color: var(--lighterblack);">
-        <span style="background-color: transparent;">
-            <span style="color:var(--carmine);">[</span>
-            cassette - portfolio
-            <span style="color:var(--carmine);">]</span>
-        </span>
-        <span style="float: right;">
-            <span style="color:var(--carmine);">[</span>
-            0xCA55E77E
-            <span style="color:var(--carmine);">]</span>
-        </span>
-    </header>
-    <br>
+    <script src="autoheader.js"></script>
 
     <div style="max-width: calc(100% - 24ch); display: inline-block;">
         <div class="bordered_box" style="height: 23lh;">
@@ -169,9 +166,5 @@
 
         </table>
     </div>
+    <script src="autofooter.js"></script>
 </body>
-
-<div w3-include-html="shared_footer.html"></div> 
-
-<script src="include_html.js"></script>
-<script>checkHTMLIncludes();</script>
