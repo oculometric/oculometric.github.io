@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- mandatory stylesheet preload (DO NOT CHANGE) -->
+    <link rel="preload" href="/styles.css" as="style" />
+    <link rel="stylesheet" href="/styles.css" />
+
+    <!-- page title -->
+    <title>cassette - hop-engine</title>
+    <meta name="og:title" content="cassette - hop-engine" />
+
+    <!-- page url-->
+    <link rel="canonical" href="https://cassette.graphics/projects/hop-engine" />
+    <meta name="og:url" content="https://cassette.graphics/projects/hop-engine" />
+    <script>
+        if (!(location.hostname === "localhost" || location.hostname === "127.0.0.1"))
+            history.replaceState("", "", "/projects/hop-engine");
+    </script>
+
+    <!-- page description -->
+    <meta name="og:description" content="a versatile cross-platform graphics engine built with Vulkan." />
+    <meta name="description" content="a versatile cross-platform graphics engine built with Vulkan." />
+
+    <!-- page embed image -->
+    <meta name="og:image" content="https://cassette.graphics/IMAGE" />
+    <meta name="twitter:card" content="https://cassette.graphics/IMAGE" />
+
+    <!-- other metadata (DO NOT CHANGE) -->
+    <meta name="theme-color" content="#FF9900" data-react-helmet="true" />
+    <meta name="keywords" content="Art, Technical Art, Programming, C++, Graphics, Rendering, Digital Art"/>
+    <meta name="author" content="Casstte Costen" />
+</head>
+
+<body title="hop-engine">
+    <script src="/autoheader.js"></script>
+
+    <a href="https://github.com/oculometric/hop-engine" style="display: block; text-align: center;">
+        <button>Github Repository</button>
+    </a>
+
+    <div class="bordered_box"><br>
+        <p>hop-engine is one of my ongoing projects, where i've been building a cross-platform graphics engine using Vulkan. the end goal i've set myself is a reasonably fully featured graphics/game engine, which doubles as a tool capable of procedural geometry and texture generation. in particular i'm interested in non-destructive workflows, and automatable workflows. i want to be able to also use it as a batch image processing tool!</p>
+        <br>
+        <p>essentially, hop-engine is my big everything-project for graphics. my end goal is a graphical editor with node-based editing workflows for as much as possible (whether it makes sense or not!)</p>
+        <br>
+        <p>in particular, hop-engine has taught me a ton about the Vulkan API (and how to effectively wrap its low-level interfaces into user-friendly frontend resources), and has given some key lessons in thoughtful API design and architecture.</p>
+    </div>
+
+    <div class="bordered_box"><br>
+        <video width="100%" height="400" controls>
+            <source src="hop-engine/space-hop-demo.mp4" type="video/mp4">
+        </video>
+        <span class="badge" style="display: block; float:right;">space-hop-demo</span>
+    </div>
+
+    <a href="https://github.com/oculometric/hop-engine/releases/tag/v0.55a" style="display: block; text-align: center;">
+        <button>Download space-hop-demo for yourself</button>
+    </a>
+
+    <div class="bordered_box"><br>
+        <p>in order to showcase hop-engine at the Staffs Uni GradEx show recently (June 2026) i built the demo above, entirely using hop-engine. it features stylised post-processing, 3D modelling and texturing courtesy of me, and shows off a little bit of the UI library i've been working on within hop-engine.</p>
+        <br>
+        <p>the background images are provided by NASA, and are credited in the bottom right! the application can run on loop forever, and a new background is selected randomly each iteration. i do love my space themes and i do love my retro themes, so it's a logical combo.</p>
+        <br>
+        <p>there's lots of stuff in the works, but here's a reasonably complete feature summary:</p>
+        <ul>
+            <li>render graph - a richly featured multi-pass rendering interface allowing multiple render passes (with customisable output buffers) to be chained together, including multiple cameras and resolutions for highly customisable post-processing workflow</li>
+            <li>robust hierarchical scene system - behaves similar to Unity, where entities/objects can have components/behaviours attached to add functionality</li>
+            <li>solid model support via OBJ, and texture support via PNG, BMP, and JPG</li>
+            <li>resource-packaging system - allowing easy distribution and deferred loading of application resources (compression to-be-implemented)</li>
+            <li>engine-application model - the end developer provides a subclass of the Application base class, which provides an update method and a place to store variables sensibly</li>
+            <li>efficient rendering via draw call ordering - including a priority system to allow control of what order materials and objects render in</li>
+            <li>custom reference counted pointer classes - both strong and weak shared pointers, with rich operator support, which the engine can track internally for memory analysis</li>
+            <li>custom material, font, and render graph descriptor files using a custom deserialisation format with advanced parsing tools - easily extensible for additional custom resource types</li>
+            <li>semi-custom shader format based on GLSL - with automatic insertion of engine uniform variables, making shader development easy</li>
+            <li>GTAO implementation - from-scratch GLSL implementation of the paper by Jimenez, Wu, Pesce, and Jarabo, available <a href="https://iryoku.com/downloads/Practical-Realtime-Strategies-for-Accurate-Indirect-Occlusion.pdf">here</a> (in need of further optimisation)</li>
+            <li>cross-platform - tested continuously on Linux and Windows (often with the help of friends; thankyou Lucy in particular for helping me identify all the driver-specific quirks of Vulkan!)</li>
+            <li>(incomplete) UI rendering and building toolkit - using a versatile shader and efficient use of geometry and draw calls to minimise rendering cost</li>
+        </ul>
+        <br>
+        <p>i also learned a TON about build systems (i taught myself CMake), pixel-painted a font or two, developed my knowledge of rendering techniques and shader tricks, and generally got a lot more fluent in C++ (especially with modern paradigms)</p>
+    </div>
+
+    <div class="bordered_box">
+        <span class="badge" style="display: block; float:right;">examples of my semi-custom shader code and material descriptor</span><br>
+        <img src="hop-engine/shader_code.png" style="display: block; width: 100%">
+        <img src="hop-engine/material_code.png" style="display: block; width: 100%">
+    </div>
+
+    <script src="/autofooter.js"></script>
+</body>

@@ -1,5 +1,13 @@
 var projects = 
 [
+    [ "hop-engine", 
+        "Dec 2025 - ongoing", 
+        "a cross-platform graphics engine based on Vulkan, focused on being highly flexible and allowing non-destructive art workflows. a playground for my C++, technical art, and graphics programming skills.", 
+        "projects/hop-engine.html", 
+        "projects/hop-engine/icon.png",
+        [ "C++", "graphics", "tech-art", "Vulkan" ],
+        [ "tech art", "graphics", "programming" ],
+        "https://github.com/oculometric/hop-engine/releases/tag/v0.55a", "Github" ],
     [ "Dissertation - Marching Tetrahedra", 
         "Sep 2025 - Mar 2026", 
         "my university final year dissertation project. i examined the Regularised Marching Tetrahedra algorithm in service of procedural geometry generation for videogames.", 
