@@ -87,7 +87,7 @@ function loadSearchParams() {
 
 function filterItems() {
     var item = document.getElementById("items");
-    var html = '<table style="width: 100%; table-layout: fixed; border: none;">\n';
+    var html = '<table style="width: 100%; table-layout: fixed; border: none; border-spacing: 0px;">\n';
     const columns = 3;
     const rows = 10;
     for (var r = 0; r < rows; r++) {
