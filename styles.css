@@ -257,7 +257,8 @@ a.block_link {
     height: 100%;
 }
 
-button {
+button,button.clear,
+button.flasher {
     color: var(--indigo);
     border: 2px solid var(--indigo);
     background-color: inherit;
@@ -269,9 +270,62 @@ button {
     padding-right: 2ch;
 }
 
+button.clear {
+    width: 100%;
+    border-color: var(--carmine);
+    color: var(--carmine);
+}
+button.clear:hover {
+    background-color: var(--carmine);
+    color: var(--nearblack);
+}
+
 button:hover {
     background-color: var(--indigo);
     color: var(--nearblack);
+}
+
+button.flasher {
+    width: 100%;
+}
+
+button.flasher:hover {
+    -webkit-animation: flasher 200ms steps(1, end) infinite;
+    animation: flasher 200ms steps(1, end) infinite;
+}
+
+@keyframes flasher {
+    0% {
+        background-color: var(--indigo);
+        color: var(--nearblack);
+    }
+
+    50% {
+        background-color: inherit;
+        color: var(--indigo);
+    }
+
+    100% {
+        background-color: var(--indigo);
+        color: var(--nearblack);
+    }
+}
+
+@-webkit-keyframes flasher {
+    0% {
+        background-color: var(--indigo);
+        color: var(--nearblack);
+    }
+
+    50% {
+        background-color: inherit;
+        color: var(--indigo);
+    }
+
+    100% {
+        background-color: var(--indigo);
+        color: var(--nearblack);
+    }
 }
 
 button:active {

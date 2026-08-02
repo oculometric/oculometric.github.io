@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- mandatory stylesheet preload (DO NOT CHANGE) -->
+    <link rel="preload" href="/styles.css" as="style" />
+    <link rel="stylesheet" href="/styles.css" />
+
+    <!-- page title -->
+    <title>cassette - portfolio</title>
+    <meta name="og:title" content="cassette - everything" />
+
+    <!-- page url-->
+    <link rel="canonical" href="https://cassette.graphics/everything" />
+    <meta name="og:url" content="https://cassette.graphics/everything" />
+    <script>
+        if (!(location.hostname === "localhost" || location.hostname === "127.0.0.1"))
+            history.replaceState("", "", "/");
+    </script>
+
+    <!-- page description -->
+    <meta name="og:description" content="index of (almost) everything i've ever made. a hopefully permanent archive." />
+    <meta name="description" content="index of (almost) everything i've ever made. a hopefully permanent archive." />
+
+    <!-- page embed image -->
+    <meta name="og:image" content="https://cassette.graphics/texel_crt.png" />
+    <meta name="twitter:card" content="https://cassette.graphics/texel_crt.png" />
+
+    <!-- other metadata (DO NOT CHANGE) -->
+    <meta name="theme-color" content="#FF9900" data-react-helmet="true" />
+    <meta name="keywords" content="Art, Technical Art, Programming, C++, Graphics, Rendering, Digital Art" />
+    <meta name="author" content="Casstte Costen" />
+
+    <script src="/everything.js"></script>
+</head>
+
+<body>
+    <script src="autoheader.js"></script>
+
+    <div class="bordered_box" style="height: 7lh;">
+        <span class="badge" style="float: right;">
+            archive
+        </span>
+        <br>
+        <div style="height: 4lh; float: right; padding-right: 1ch; padding-left: 1ch;">
+            <img src="texel_crt.png"
+                style="margin-left:auto; margin-right:auto; display:block; image-rendering: pixelated; width: 128px; padding: 0px; margin-top: -5px; background-color: transparent;" />
+        </div>
+        <br>
+        <p>this is an archive of everything i've made. hopefully it's reasonably permanent and reasonbly accessible.
+            thankyou to everyone who encouraged and supported me with any or all of these projects.</p>
+    </div>
+
+    <div style="max-width: 20ch; float: right;">
+        <div class="bordered_box">
+            <span class="badge">
+                filters
+            </span>
+            <br>
+            <br>
+            <p class="badge" style="margin-left:2ch;">type</p>
+            <button class="flasher" onclick="toggleType()">programming</button>
+            <button class="flasher" onclick="toggleType()">art</button>
+            <button class="flasher" onclick="toggleType()">other</button>
+            <br><br>
+            <p class="badge" style="margin-left:2ch;">collection</p>
+            <button class="flasher" onclick="toggleCollection()">'exploration'</button>
+            <br><br>
+            <p class="badge" style="margin-left:2ch;">tools</p>
+            <button class="flasher" onclick="toggleTool()">Blender</button>
+            <button class="flasher" onclick="toggleTool()">Inkscape</button>
+            <button class="flasher" onclick="toggleTool()">C++</button>
+            <button class="flasher" onclick="toggleTool()">Vulkan</button>
+            <button class="flasher" onclick="toggleTool()">OpenGL</button>
+            <button class="flasher" onclick="toggleTool()">Godot</button>
+            <button class="flasher" onclick="toggleTool()">Unity</button>
+            <button class="flasher" onclick="toggleTool()">UE5</button>
+            <br><br>
+            <p class="badge" style="margin-left:2ch;">tags</p>
+            <button class="flasher" onclick="toggleTag()">surrealism</button>
+            <button class="flasher" onclick="toggleTag()">space</button>
+            <button class="flasher" onclick="toggleTag()">pixel art</button>
+            <br><br>
+            <button class="clear" onclick="clearFilters()">clear</button>
+        </div>
+    </div>
+
+    <div style="max-width: calc(100% - 20ch)" id="items">
+    </div>
+
+    <script>loadSearchParams();</script>
+    <script src="autofooter.js"></script>
+</body>
