@@ -13,12 +13,11 @@
     <link rel="canonical" href="https://cassette.graphics/everything" />
     <meta name="og:url" content="https://cassette.graphics/everything" />
     <script>
-        if (!(location.hostname === "localhost" || location.hostname === "127.0.0.1"))
-    {
-        var u = window.location.toString();
-        u = u.replace(".html", "");
-        history.replaceState("", "", u);
-    }
+        if (!(location.hostname === "localhost" || location.hostname === "127.0.0.1")) {
+            var u = window.location.toString();
+            u = u.replace(".html", "");
+            history.replaceState("", "", u);
+        }
     </script>
 
     <!-- page description -->
@@ -53,6 +52,19 @@
         <p>this is an archive of everything i've made. hopefully it's reasonably permanent and reasonbly accessible.
             thankyou to everyone who encouraged and supported me with any or all of these projects.</p>
     </div>
+
+    <header style="justify-content: space-between; align-items: center; background-color: var(--lighterblack);">
+        <span style="background-color: transparent;">
+            <p style="float: left;" class="badge" filter-label>columns</p>
+            <button class="flasher" style="width: auto;" onclick="setColumns(1)" id="c1but">vertex(1)</button>
+            <button class="flasher" style="width: auto;" onclick="setColumns(2)" id="c2but">edge(2)</button>
+            <button class="flasher" style="width: auto;" onclick="setColumns(3)" id="c3but">tri(3)</button>
+            <button class="flasher" style="width: auto;" onclick="setColumns(4)" id="c4but">quad(4)</button>
+            <span class="hollow_badge" style="float: right;" id="itemscount">
+                [ ? items ]
+            </span>
+        </span>
+    </header>
 
     <div style="max-width: 20ch; float: right;">
         <div class="bordered_box">
@@ -91,6 +103,6 @@
     <div style="max-width: calc(100% - 20ch)" id="items">
     </div>
 
-    <script>loadSearchParams();</script>
+    <script>loadSearchParams(); setColumns(3);</script>
     <script src="autofooter.js"></script>
 </body>
