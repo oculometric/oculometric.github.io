@@ -33,7 +33,7 @@
     <meta name="keywords" content="Art, Technical Art, Programming, C++, Graphics, Rendering, Digital Art" />
     <meta name="author" content="Casstte Costen" />
 
-    <script src="/everything.js"></script>
+    <script src="/everything/everything.js"></script>
 </head>
 
 <body>
@@ -74,29 +74,29 @@
             <br>
             <br>
             <p class="badge" style="margin-left:2ch;">type</p>
-            <button class="flasher" onclick="toggleType()">programming</button>
-            <button class="flasher" onclick="toggleType()">art</button>
-            <button class="flasher" onclick="toggleType()">other</button>
+            <button class="flasher" onclick="toggleType();">program</button>
+            <button class="flasher" onclick="toggleType();">artwork</button>
+            <button class="flasher" onclick="toggleType();">other</button>
             <br><br>
             <p class="badge" style="margin-left:2ch;">collection</p>
-            <button class="flasher" onclick="toggleCollection()">'exploration'</button>
+            <button class="flasher" onclick="toggleCollection();">'exploration'</button>
             <br><br>
             <p class="badge" style="margin-left:2ch;">tools</p>
-            <button class="flasher" onclick="toggleTool()">Blender</button>
-            <button class="flasher" onclick="toggleTool()">Inkscape</button>
-            <button class="flasher" onclick="toggleTool()">C++</button>
-            <button class="flasher" onclick="toggleTool()">Vulkan</button>
-            <button class="flasher" onclick="toggleTool()">OpenGL</button>
-            <button class="flasher" onclick="toggleTool()">Godot</button>
-            <button class="flasher" onclick="toggleTool()">Unity</button>
-            <button class="flasher" onclick="toggleTool()">UE5</button>
+            <button class="flasher" onclick="toggleTool();">Blender</button>
+            <button class="flasher" onclick="toggleTool();">Inkscape</button>
+            <button class="flasher" onclick="toggleTool();">C++</button>
+            <button class="flasher" onclick="toggleTool();">Vulkan</button>
+            <button class="flasher" onclick="toggleTool();">OpenGL</button>
+            <button class="flasher" onclick="toggleTool();">Godot</button>
+            <button class="flasher" onclick="toggleTool();">Unity</button>
+            <button class="flasher" onclick="toggleTool();">UE5</button>
             <br><br>
             <p class="badge" style="margin-left:2ch;">tags</p>
-            <button class="flasher" onclick="toggleTag()">surrealism</button>
-            <button class="flasher" onclick="toggleTag()">space</button>
-            <button class="flasher" onclick="toggleTag()">pixel art</button>
+            <button class="flasher" onclick="toggleTag();">surrealism</button>
+            <button class="flasher" onclick="toggleTag();">space</button>
+            <button class="flasher" onclick="toggleTag();">pixel art</button>
             <br><br>
-            <button class="clear" onclick="clearFilters()">clear</button>
+            <button class="clear" onclick="clearFilters();">clear</button>
         </div>
     </div>
 
@@ -104,15 +104,15 @@
         onclick="closeDetail();" hidden id="detail">
         <div style="width: calc(94ch - 6ch); margin: auto; height: 33lh; margin-top: 8lh; z-index: 2;">
             <div class="bordered_box" style="width: 100%; height:100%;">
-                <span class="hollow_badge" style="float: left;">[ TYPE ]</span>
-                <span class="badge" style="float: right; background-color: var(--carmine);">COLLECTION</span>
+                <span class="hollow_badge" style="float: left;" id="detail_type">[ TYPE ]</span>
+                <span class="badge" style="float: right; background-color: var(--carmine);" id="detail_collection">COLLECTION</span>
                 <img src="favicon-32x32.png"
-                    style="display: block; width: 100%; height: 31lh; padding: 8px; background-color: transparent; object-fit: contain;" />
-                <span class="badge" style="float: left;">PROJECTNAME</span>
-                <span class="hollow_badge" style="float: right;">[ DATE ]</span>
+                    style="display: block; width: 100%; height: 31lh; padding: 8px; background-color: transparent; object-fit: contain;" id="detail_image" />
+                <span class="badge" style="float: left;" id="detail_name">PROJECTNAME</span>
+                <span class="hollow_badge" style="float: right;" id="detail_date">[ DATE ]</span>
             </div>
             <div style="background-color: var(--lighterblack);  padding-bottom: 1lh;">
-                <span style="justify-content: space-between; align-items: center; background-color: transparent;">
+                <span style="justify-content: space-between; align-items: center; background-color: transparent;" id="detail_tags">
                     <p class="badge"
                         style="width: fit-content; display: inline-block; margin-left: 1ch; margin-right: 1ch;">TAGS</p>
                     <p class="badge"
@@ -133,6 +133,6 @@
     <div style="max-width: calc(100% - 20ch)" id="items">
     </div>
 
-    <script>loadSearchParams(); setColumns(3);</script>
+    <script>getDatabase(); loadSearchParams();</script>
     <script src="autofooter.js"></script>
 </body>
