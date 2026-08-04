@@ -40,7 +40,7 @@ function setUnHighlighted(button) {
     button.style["color"] = "";
 }
 
-var generic_names = ["type", "collection", "tool", "tag", "columns"];
+var generic_names = ["type", "collection", "tool", "tag", "columns", "expanded"];
 
 function setSearchParam(index, value) {
     var url = new URL(window.location);
@@ -120,6 +120,9 @@ function loadSearchParams() {
         setHighlighted(document.getElementById("c4but"));
 
     filterItems();
+    if (url.searchParams.has(generic_names[5]))
+        showDetail();
+    else closeDetail();
 }
 
 function filterItems() {
@@ -141,7 +144,7 @@ function filterItems() {
         for (var c = 0; c < columns; c++) {
             items_count++;
             var project_name = "PROJECT" + ((r * columns) + c);
-            html += '<td>\n';
+            html += '<td onclick="showDetail();">\n';
             html += '<div class="bordered_box" style="height:' + h + 'lh;"><br>';
             html += '<img src="favicon-32x32.png" style="display: block; height: ' + (h - 2) + 'lh; padding: 8px; background-color: transparent;" />'
             html += '<span class="hollow_badge" style="float: left; margin-top:0lh;">'
@@ -155,4 +158,14 @@ function filterItems() {
     html += '</table>';
     item.innerHTML = html;
     document.getElementById("itemscount").innerHTML = '[ ' + items_count + ' items ]';
+}
+
+function showDetail() {
+    document.getElementById("detail").removeAttribute("hidden");
+    setSearchParam(5, "PROJECTNAME|");
+}
+
+function closeDetail() {
+    document.getElementById("detail").setAttribute("hidden", "");
+    setSearchParam(5, "");
 }
